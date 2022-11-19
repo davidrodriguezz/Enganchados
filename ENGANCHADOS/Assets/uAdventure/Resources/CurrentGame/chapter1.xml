@@ -31,84 +31,6 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </player>
-  <character id="Perro" behaviour="normal">
-    <resources name="No name">
-      <asset type="standup" uri="assets/animation/obito.eaa.xml" />
-      <asset type="standdown" uri="assets/animation/obito.eaa.xml" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
-      <asset type="speakup" uri="assets/special/EmptyAnimation" />
-      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
-      <asset type="speakright" uri="assets/special/EmptyAnimation" />
-      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
-      <asset type="useright" uri="assets/special/EmptyAnimation" />
-      <asset type="useleft" uri="assets/special/EmptyAnimation" />
-      <asset type="walkup" uri="assets/special/EmptyAnimation" />
-      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
-      <asset type="walkright" uri="assets/special/EmptyAnimation" />
-      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
-      <bordercolor color="#000000" />
-    </textcolor>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-    <voice name="" synthesizeAlways="no" />
-    <actions>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <effect>
-          <trigger-conversation idTarget="Lolitoesunperro" guid="2cf20b84-f0b5-4dc5-877e-aa08631d747d" />
-          <condition />
-        </effect>
-      </talk-to>
-    </actions>
-  </character>
-  <character id="Lolito" behaviour="normal">
-    <resources name="No name">
-      <asset type="standup" uri="assets/animation/Perrito.eaa.xml" />
-      <asset type="standdown" uri="assets/animation/Perrito.eaa.xml" />
-      <asset type="standright" uri="assets/special/EmptyAnimation" />
-      <asset type="standleft" uri="assets/special/EmptyAnimation" />
-      <asset type="speakup" uri="assets/special/EmptyAnimation" />
-      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
-      <asset type="speakright" uri="assets/special/EmptyAnimation" />
-      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
-      <asset type="useright" uri="assets/special/EmptyAnimation" />
-      <asset type="useleft" uri="assets/special/EmptyAnimation" />
-      <asset type="walkup" uri="assets/special/EmptyAnimation" />
-      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
-      <asset type="walkright" uri="assets/special/EmptyAnimation" />
-      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
-    </resources>
-    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
-      <bordercolor color="#000000" />
-    </textcolor>
-    <description>
-      <name>
-      </name>
-      <brief>
-      </brief>
-      <detailed>
-      </detailed>
-    </description>
-    <voice name="" synthesizeAlways="no" />
-    <actions>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <effect>
-          <trigger-conversation idTarget="Guau" guid="dbeeac3b-13ae-43a8-b349-cc51c16956ec" />
-          <condition />
-        </effect>
-      </talk-to>
-    </actions>
-  </character>
   <character id="Abuela" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/Abuelita.eaa.xml" />
@@ -139,11 +61,20 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: ConversacionPrimeraManana</documentation>
+        <effect>
+          <trigger-conversation idTarget="ConversacionPrimeraManana" guid="25b7f7e5-fdaf-4ebb-87fe-9926c8f8e7b2" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
-  <character id="Timmy" behaviour="normal">
+  <character id="Madre" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/Nino1.eaa.xml" />
-      <asset type="standdown" uri="assets/animation/Nino1.eaa.xml" />
+      <asset type="standup" uri="assets/animation/mami.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/mami.eaa.xml" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
@@ -171,7 +102,69 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="Clase" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="0.6733333" class="accesible" type="area">
+  <character id="Profesora" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/profe.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/profe.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="Pibe1" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <scene id="Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="0.6733333" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -182,11 +175,11 @@
     <default-initial-position x="359" y="303" />
     <exits>
       <exit rectangular="yes" x="626" y="144" width="45" height="180" hasInfluenceArea="no" idTarget="ColegioExt" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" />
+        <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
   </scene>
-  <scene id="ColegioExt" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="ColegioExt" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -197,43 +190,41 @@
     <default-initial-position x="1024" y="768" />
     <exits>
       <exit rectangular="yes" x="931" y="459" width="263" height="254" hasInfluenceArea="no" idTarget="Clase" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" />
+        <exit-look text="" cursor-path="" sound-path="" />
       </exit>
-      <exit rectangular="yes" x="2" y="5" width="237" height="1018" hasInfluenceArea="no" idTarget="Pizzeria" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" />
+      <exit rectangular="yes" x="2" y="5" width="237" height="1018" hasInfluenceArea="no" idTarget="Habitación" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
   </scene>
-  <scene id="Pizzeria" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Habitación" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/BigDaddys5.jpg" />
+      <asset type="background" uri="assets/background/habitacion.jpg" />
     </resources>
     <name>
     </name>
     <default-initial-position x="1719" y="295" />
     <exits>
-      <exit rectangular="yes" x="418" y="298" width="281" height="86" hasInfluenceArea="no" idTarget="ColegioExt" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="-39" y="-6" width="183" height="1179" hasInfluenceArea="no" idTarget="ColegioExt" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Perro" x="942" y="715" scale="0.5627096" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="Lolito" x="784" y="684" scale="0.5720668" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="Abuela" x="191" y="612" scale="0.6561568" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Abuela" x="539" y="1112" scale="0.9865363" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <graph-conversation id="Lolitoesunperro">
     <dialogue-node nodeindex="0" editor-x="31" editor-y="46">
-      <speak-char idTarget="Perro">
+      <speak-player>
         <resources name="No name" />
-        <text>¿Lolito es un perro?</text>
-      </speak-char>
+        <text>#! ¿Lolito es un perro?</text>
+      </speak-player>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" question="¿Lolito es un perro?" random="yes" preListening="yes" editor-x="591" editor-y="44" x="591" y="44">
+    <option-node nodeindex="1" question="¿Lolito es un perro?" random="yes" keepShowing="yes" preListening="yes" editor-x="591" editor-y="44" x="591" y="44">
       <speak-player>
         <text>Si</text>
         <resources name="No name" />
@@ -254,38 +245,185 @@
       <child nodeindex="4" />
     </option-node>
     <dialogue-node nodeindex="2" editor-x="1132" editor-y="17">
-      <speak-char idTarget="Perro">
+      <speak-player>
         <resources name="No name" />
         <text>Que soso eres Lobby</text>
-      </speak-char>
+      </speak-player>
       <condition />
-      <end-conversation />
+      <child nodeindex="1" />
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="1118" editor-y="202">
-      <speak-char idTarget="Perro">
+      <speak-player>
         <resources name="No name" />
         <text>Davidinchi tu padre</text>
-      </speak-char>
+      </speak-player>
       <condition />
       <end-conversation />
     </dialogue-node>
     <dialogue-node nodeindex="4" editor-x="1083" editor-y="390">
-      <speak-char idTarget="Perro">
+      <speak-player>
         <resources name="No name" />
         <text>El perro de Haaland</text>
-      </speak-char>
+      </speak-player>
       <condition />
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Guau">
     <dialogue-node nodeindex="0" editor-x="352" editor-y="38">
-      <speak-char idTarget="Lolito">
+      <speak-player>
         <resources name="No name" />
         <text>Guau!</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Alsuper">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Oye broder, pillame esto en el super</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" question="¿Se lo pillas?" random="yes" keepShowing="yes" preListening="yes" editor-x="728" editor-y="30" x="728" y="30">
+      <speak-player>
+        <text>No porque huele mal</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Si pero con pegas</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>
+        <text>Ni de coña broder</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="948" editor-y="30">
+      <speak-player>
+        <resources name="No name" />
+        <text>Tus muertos</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="948" editor-y="221">
+      <speak-player>
+        <resources name="No name" />
+        <text>Gracias nene</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="948" editor-y="412">
+      <speak-player>
+        <resources name="No name" />
+        <text>Menudo mierdas</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConversacionPrimeraManana">
+    <dialogue-node nodeindex="0" editor-x="114" editor-y="39">
+      <speak-char idTarget="Abuela">
+        <resources name="No name" />
+        <text>Buenos días mi niño, despierta que tienes clase.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="607" editor-y="40">
+      <speak-char idTarget="Abuela">
+        <resources name="No name" />
+        <text>No vayas a llegar tarde, que ayer en tu cumpleaños de los 16 te acostaste muy tarde.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="2" />
+    </dialogue-node>
+    <option-node nodeindex="2" question="No vayas a llegar tarde, que ayer en tu cumpleaños de los 16 te acostaste muy tarde." random="yes" keepShowing="yes" preListening="yes" editor-x="1099" editor-y="37" x="1099" y="37">
+      <speak-player>
+        <text>5 minutitos más, abuela.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>
+        <text>Ya voy.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="3" editor-x="1611" editor-y="16">
+      <speak-char idTarget="Abuela">
+        <resources name="No name" />
+        <text>No me seas vago.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="2" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="1556" editor-y="287">
+      <speak-char idTarget="Abuela">
+        <resources name="No name" />
+        <text>Muy bien, a desayunar y a clase.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="5" editor-x="1995" editor-y="282">
+      <speak-char idTarget="Abuela">
+        <resources name="No name" />
+        <text>Abrígate, que ya empieza a hacer frío.</text>
       </speak-char>
       <condition />
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
+  <object id="Perraco" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <documentation>El perro de mi abuela se llama lolito</documentation>
+    <resources name="No name">
+      <asset type="image" uri="assets/image/lolito.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+      <asset type="imageover" uri="assets/image/lolito.png" />
+    </resources>
+    <description>
+      <name>El perro de mi abuela se llama lolito</name>
+      <brief>El perro de mi abuela se llama lolito</brief>
+      <detailed>El perro de mi abuela se llama lolito</detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <documentation>El perro de mi abuela se llama lolito</documentation>
+        <effect>
+          <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="" guid="b3b084cd-fa25-4d67-a23c-ea8bde925ea5">Tu puta madre</show-text>
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <atrezzoobject id="AtrezzoId">
+    <documentation>EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</documentation>
+    <resources name="No name">
+      <asset type="image" uri="assets/image/149-1491992_imagem-johnny-test-personagem-png-wiki-fandom-johnny.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
 </eAdventure>

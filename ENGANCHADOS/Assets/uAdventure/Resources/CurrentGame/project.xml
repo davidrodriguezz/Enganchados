@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment> Project Configuration </comment>
+<entry key="Chapter0.ColegioExt.X">303</entry>
+<entry key="Chapter0.ColegioExt.Y">131</entry>
+<entry key="Chapter0.Pizzeria.X">0</entry>
+<entry key="Chapter0.Pizzeria.Y">410</entry>
+<entry key="Chapter0.Clase.X">116</entry>
+<entry key="Chapter0.Clase.Y">0</entry>
 </properties>
 
