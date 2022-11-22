@@ -174,18 +174,15 @@
     <voice name="" synthesizeAlways="no" />
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: SaludoColegio</documentation>
-        <condition>
-          <active flag="salirCasa" />
-        </condition>
+        <documentation>Created with target conversation: IntroCajas</documentation>
         <effect>
-          <trigger-conversation idTarget="SaludoColegio" guid="c11f1274-1665-4063-a492-034ee5d544a1" />
+          <trigger-conversation idTarget="IntroCajas" guid="c8596ecb-4c37-4142-aee8-ebc65a87c576" />
           <condition />
         </effect>
       </talk-to>
     </actions>
   </character>
-  <scene id="Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="0.6733333" class="accesible" type="area">
+  <scene id="Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="0.6733333" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -223,7 +220,7 @@
       <character-ref idTarget="Pibe1" x="1560" y="970" scale="0.787311" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Habitación" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1" class="accesible" type="area">
+  <scene id="Habitación" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -501,6 +498,16 @@
           <condition />
         </effect>
       </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="IntroCajas">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Che copate</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
 </eAdventure>
