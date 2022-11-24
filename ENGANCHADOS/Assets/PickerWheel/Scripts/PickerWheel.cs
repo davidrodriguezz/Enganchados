@@ -27,7 +27,7 @@ namespace EasyUI.PickerWheelUI {
 
       [Space]
       [Header ("Picker wheel settings :")]
-      [Range (1, 20)] public int spinDuration = 8 ;
+      [Range (1, 100)] public int spinDuration = 8 ;
       [SerializeField] [Range (.2f, 2f)] private float wheelSize = 1f ;
 
       [Space]
@@ -146,7 +146,7 @@ namespace EasyUI.PickerWheelUI {
             bool isIndicatorOnTheLine = false ;
 
             wheelCircle
-            .DORotate (targetRotation, spinDuration, RotateMode.Fast)
+            .DORotate (targetRotation, spinDuration, RotateMode.FastBeyond360)
             .SetEase (Ease.InOutQuart)
             .OnUpdate (() => {
                float diff = Mathf.Abs (prevAngle - currentAngle) ;

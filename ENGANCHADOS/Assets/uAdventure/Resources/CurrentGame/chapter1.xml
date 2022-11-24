@@ -507,7 +507,13 @@
         <text>Che copate</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="MinijuegoRuleta" x="1024" y="768" transitionTime="0" transitionType="5" guid="4b8b5e8e-010d-4d09-bf54-45db5651b5db" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
+  <unity-scene id="MinijuegoRuleta" scene="Assets/Scenes/RuletaMinigame.unity" />
 </eAdventure>
