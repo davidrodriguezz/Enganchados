@@ -104,8 +104,8 @@
   </character>
   <character id="Profesora" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/profe.eaa.xml" />
-      <asset type="standdown" uri="assets/animation/profe.eaa.xml" />
+      <asset type="standup" uri="assets/animation/ticher.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/ticher.eaa.xml" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
@@ -177,6 +177,52 @@
         <documentation>Created with target conversation: IntroCajas</documentation>
         <effect>
           <trigger-conversation idTarget="IntroCajas" guid="c8596ecb-4c37-4142-aee8-ebc65a87c576" />
+          <condition>
+            <inactive flag="Primer día" />
+          </condition>
+          <trigger-conversation idTarget="SaludoColegio" guid="f499273c-f254-4c65-8c04-2c50c8d77380" />
+          <condition>
+            <active flag="Primer día" />
+          </condition>
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Piba1" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/pibinha1.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/pibinha1.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: DespuesClase</documentation>
+        <effect>
+          <trigger-conversation idTarget="DespuesClase" guid="a95ca03d-ed93-467c-8f6e-d2fc9a90659a" />
           <condition />
         </effect>
       </talk-to>
@@ -192,7 +238,7 @@
     </name>
     <default-initial-position x="359" y="303" />
     <characters>
-      <character-ref idTarget="Profesora" x="735" y="925" scale="2.301881" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Profesora" x="790" y="941" scale="0.9827529" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="ColegioExt" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
@@ -279,6 +325,19 @@
     </exits>
     <characters>
       <character-ref idTarget="Pibe1" x="726" y="607" scale="0.3195288" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/colegioExt.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="768" />
+    <characters>
+      <character-ref idTarget="Piba1" x="1652" y="936" scale="0.6341843" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <graph-conversation id="PrimeraManana">
@@ -502,14 +561,134 @@
   </graph-conversation>
   <graph-conversation id="IntroCajas">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Hola tío, estoy cansadísimo de jugar al volleyball.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>A ver si llego ya a casa y me echo varias partidas al juego.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Que quiero desbloquear una lootbox de la temporada de Invierno.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>¿Sabes lo que es una lootbox?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="466" editor-y="50" x="466" y="50">
+      <speak-player>
+        <text>No tengo ni idea de lo que es eso.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Claro que sí.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="967" editor-y="11">
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Una lootbox es un objeto del juego que requiere mucho tiempo de obtener.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Con una lootbox se pueden conseguir objetos exclusivos y que te hacen mejorar drásticamente en el juego.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Pero claro, esto último si tienes suerte.</text>
+      </speak-char>
+      <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Che copate</text>
+        <text>¿Y cómo se consiguen?</text>
       </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Las lootboxes se consiguen jugando mucho al juego o mediante pagos dentro del juego. No suelen ser muy caras.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Por ejemplo,  a mi me tocó una pistola que hace mucho daño a los zombies.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Luego miro en casa a ver si tengo alguna.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>*Suena la campana*</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Vamos ya ha terminado la clase, ¡a casa!</text>
+      </speak-char>
       <condition />
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="MinijuegoRuleta" x="1024" y="768" transitionTime="0" transitionType="5" guid="4b8b5e8e-010d-4d09-bf54-45db5651b5db" />
+          <trigger-scene idTarget="ColegioExt2" x="1024" y="768" transitionTime="3" transitionType="5" guid="8dac1dc0-4319-48bd-ae54-640961c7d105" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="931" editor-y="337">
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Pues a mi ayer me tocó una pistola que mata a los zombies de un disparo. Está chetada.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Joder que suerte, pues voy a mirar si tengo alguna lootbox y tengo tu suerte.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>*Suena la campana*</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Vamos ya ha terminado la clase, ¡a casa!</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="ColegioExt2" x="1024" y="768" transitionTime="2" transitionType="5" guid="f21445fa-0644-4e22-834c-48e3d17813f5" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="DespuesClase">
+    <dialogue-node nodeindex="0" editor-x="170" editor-y="42">
+      <speak-char idTarget="Piba1">
+        <resources name="No name" />
+        <text>Me gustas, ¿te gusto?</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="MinijuegoRuleta" x="1024" y="768" transitionTime="0" transitionType="5" guid="532043e9-1e45-4b1f-84b5-34397b8b4f34" />
           <condition />
         </effect>
       </end-conversation>

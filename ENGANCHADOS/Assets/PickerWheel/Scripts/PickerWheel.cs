@@ -38,11 +38,10 @@ namespace EasyUI.PickerWheelUI {
       private UnityAction onSpinStartEvent ;
       private UnityAction<WheelPiece> onSpinEndEvent ;
 
-
+      public int cont = 0;
       private bool _isSpinning = false ;
-
       public bool IsSpinning { get { return _isSpinning ; } }
-
+      public bool isSpinning() { return _isSpinning; } 
 
       private Vector2 pieceMinSize = new Vector2 (81f, 146f) ;
       private Vector2 pieceMaxSize = new Vector2 (144f, 213f) ;
@@ -119,6 +118,7 @@ namespace EasyUI.PickerWheelUI {
       public void Spin () {
          if (!_isSpinning) {
             _isSpinning = true ;
+                cont = 1;
             if (onSpinStartEvent != null)
                onSpinStartEvent.Invoke () ;
 
