@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RuletaMinigame.unity
     guid: 79aeab03706d5dd46aa70296b8ed297e
+  - enabled: 1
+    path: Assets/Scenes/RuletaMinigame2.unity
+    guid: 5c3137a6ac2d13347a54b1f835020442
+  - enabled: 1
+    path: Assets/Scenes/Mobile.unity
+    guid: 08f96ffb739f8fd46aef9488ffdd1851
+  - enabled: 1
+    path: Assets/Scenes/MobileAbuela.unity
+    guid: df6f870f4f203fb458273f64b355c326
   m_configObjects: {}

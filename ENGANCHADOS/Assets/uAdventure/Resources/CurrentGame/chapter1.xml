@@ -188,10 +188,10 @@
       </talk-to>
     </actions>
   </character>
-  <character id="Piba1" behaviour="normal">
+  <character id="Pibe2" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/pibinha1.eaa.xml" />
-      <asset type="standdown" uri="assets/animation/pibinha1.eaa.xml" />
+      <asset type="standup" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/Pibinho2.eaa.xml" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
@@ -337,7 +337,7 @@
     </name>
     <default-initial-position x="1024" y="768" />
     <characters>
-      <character-ref idTarget="Piba1" x="1652" y="936" scale="0.6341843" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe2" x="1652" y="936" scale="0.6341843" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <graph-conversation id="PrimeraManana">
@@ -680,19 +680,22 @@
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="DespuesClase">
-    <dialogue-node nodeindex="0" editor-x="170" editor-y="42">
-      <speak-char idTarget="Piba1">
+    <dialogue-node nodeindex="0" editor-x="340" editor-y="40">
+      <speak-char idTarget="Pibe2">
         <resources name="No name" />
         <text>Me gustas, ¿te gusto?</text>
       </speak-char>
       <condition />
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="MinijuegoRuleta" x="1024" y="768" transitionTime="0" transitionType="5" guid="532043e9-1e45-4b1f-84b5-34397b8b4f34" />
+          <trigger-scene idTarget="Mobile" x="1024" y="768" transitionTime="0" transitionType="5" guid="532043e9-1e45-4b1f-84b5-34397b8b4f34" />
           <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <unity-scene id="MinijuegoRuleta" scene="Assets/Scenes/RuletaMinigame.unity" />
+  <unity-scene id="MinijuegoRuleta2" scene="Assets/Scenes/RuletaMinigame2.unity" />
+  <unity-scene id="Mobile" scene="Assets/Scenes/Mobile.unity" />
+  <unity-scene id="MobileAbuela" scene="Assets/Scenes/MobileAbuela.unity" />
 </eAdventure>

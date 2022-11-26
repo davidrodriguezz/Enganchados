@@ -9,6 +9,8 @@ public class Girar : MonoBehaviour
 
     [SerializeField] private PickerWheel pickerWheel;
 
+    public GameObject image;
+
 
     private void Start()
     {
@@ -22,6 +24,8 @@ public class Girar : MonoBehaviour
             {
                 Debug.Log("Spin end...");
                 uiSpinButton.interactable = true;
+                image.GetComponent<Image>().sprite = wheelPiece.Icon;
+                image.SetActive(true);
             });
             pickerWheel.Spin();
 
