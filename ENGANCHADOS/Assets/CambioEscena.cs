@@ -41,7 +41,7 @@ public class CambioEscena : MonoBehaviour
     }
     public void CambiaAJuego()
     {
-
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("KillZomb", 0, 0) }));
     }
     public void CambiaAMensajes()
     {
