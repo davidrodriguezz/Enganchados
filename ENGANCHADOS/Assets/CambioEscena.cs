@@ -35,6 +35,10 @@ public class CambioEscena : MonoBehaviour
     {
         Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("MinijuegoRuleta", 0, 0) }));
     }
+    public void CambiaARuleta2()
+    {
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("MinijuegoRuleta2", 0, 0) }));
+    }
     public void CambiaAJuego()
     {
 

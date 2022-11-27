@@ -174,16 +174,9 @@
     <voice name="" synthesizeAlways="no" />
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: IntroCajas</documentation>
         <effect>
-          <trigger-conversation idTarget="IntroCajas" guid="c8596ecb-4c37-4142-aee8-ebc65a87c576" />
-          <condition>
-            <inactive flag="Primer día" />
-          </condition>
-          <trigger-conversation idTarget="SaludoColegio" guid="f499273c-f254-4c65-8c04-2c50c8d77380" />
-          <condition>
-            <active flag="Primer día" />
-          </condition>
+          <trigger-conversation idTarget="IntroCajas" guid="57d4e54b-d877-43c9-a06a-91f1e97db479" />
+          <condition />
         </effect>
       </talk-to>
     </actions>
@@ -228,7 +221,7 @@
       </talk-to>
     </actions>
   </character>
-  <scene id="Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="0.6733333" class="accesible" type="area">
+  <scene id="Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="0.6733333" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -266,7 +259,7 @@
       <character-ref idTarget="Pibe1" x="1560" y="970" scale="0.787311" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Habitación" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
+  <scene id="Habitación" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">

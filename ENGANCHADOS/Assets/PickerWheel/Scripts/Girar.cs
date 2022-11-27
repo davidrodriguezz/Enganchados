@@ -16,19 +16,27 @@ public class Girar : MonoBehaviour
     {
         uiSpinButton.onClick.AddListener(() =>
         {
-            uiSpinButton.interactable = false;
-
-            pickerWheel.OnSpinStart(() => Debug.Log("Spin started..."));
-
-            pickerWheel.OnSpinEnd(wheelPiece =>
+            if (GameManager.instance.getMonedas() >= 3)
             {
-                Debug.Log("Spin end...");
-                uiSpinButton.interactable = true;
-                image.GetComponent<Image>().sprite = wheelPiece.Icon;
-                image.SetActive(true);
-            });
-            pickerWheel.Spin();
+                uiSpinButton.interactable = false;
 
+                pickerWheel.OnSpinStart(() => 
+                { 
+                    Debug.Log("Spin started..."); 
+                    GameManager.instance.substractMonedas(3); 
+                });
+
+                pickerWheel.OnSpinEnd(wheelPiece =>
+                {
+                    Debug.Log("Spin end...");
+                    if(GameManager.instance.getMonedas() < 3)
+                        uiSpinButton.interactable = false;
+                    else uiSpinButton.interactable = true;
+                    image.GetComponent<Image>().sprite = wheelPiece.Icon;
+                    image.SetActive(true);
+                });
+                pickerWheel.Spin();
+            }
         });
     }
 
