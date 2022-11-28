@@ -281,7 +281,7 @@
     </name>
     <default-initial-position x="1719" y="295" />
     <exits>
-      <exit rectangular="yes" x="-39" y="-6" width="183" height="1179" hasInfluenceArea="no" idTarget="KillZomb" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="-39" y="-6" width="183" height="1179" hasInfluenceArea="no" idTarget="ColegioExt" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="salirCasa" />
@@ -342,7 +342,7 @@
     </name>
     <default-initial-position x="1024" y="768" />
     <exits>
-      <exit rectangular="yes" x="-1" y="2" width="150" height="1027" hasInfluenceArea="no" idTarget="MobileRuleta" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="-1" y="2" width="150" height="1027" hasInfluenceArea="no" idTarget="MobileKillZomb1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
@@ -763,4 +763,6 @@
   <unity-scene id="MobileAbuela" scene="Assets/Scenes/MobileAbuela.unity" />
   <unity-scene id="MobileRuleta" scene="Assets/Scenes/MobileRuleta.unity" />
   <unity-scene id="KillZomb" scene="Assets/Scenes/KillZomb.unity" />
+  <unity-scene id="MobileKillZomb1" scene="Assets/Scenes/MobileMiniJuego.unity" />
+  <unity-scene id="KillZomb2" scene="Assets/Scenes/KillZomb2.unity" />
 </eAdventure>

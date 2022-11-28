@@ -586,7 +586,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1347866441}
-        m_MethodName: CambiaAMovilRuleta
+        m_MethodName: CambiaAMensajes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a30d81499783643833cb56e6c3ff24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombie: {fileID: 5755564050930304607, guid: 8a1d05af5dc8ad1469c92556038b6de9, type: 3}
+  zombie: {fileID: 5755564050930304607, guid: b19d221a7e41b194690c9582de6c8ea5, type: 3}
   bResult: {fileID: 1199086062}
   txtResult: {fileID: 1503216766}
   ez: {fileID: 1014099682}
@@ -817,7 +817,7 @@ GameObject:
   - component: {fileID: 1429882556}
   - component: {fileID: 1429882555}
   m_Layer: 0
-  m_Name: comun
+  m_Name: legendario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -862,7 +862,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 625057b44b23ce54f8db19873757ce86, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a5e05c9ca737e6042b5cd70792f9d3ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

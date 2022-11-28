@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InstantiateZombie : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject zombie;
+    [SerializeField] GameObject zombie;
+    [SerializeField] Button bResult;
+    [SerializeField] Text txtResult;
+    [SerializeField] endZone ez;
     int cont = 0;
-    // Start is called before the first frame update
+
     void Start()
     {
         Invoke("createZombie", 1);
+        Invoke("showResult", 23);
     }
 
     void createZombie()
@@ -22,6 +26,9 @@ public class InstantiateZombie : MonoBehaviour
             Invoke("createZombie", 1);
         }
     }
-
-    
+    void showResult()
+    {
+        bResult.gameObject.SetActive(true);
+        txtResult.text = "HAS MATADO A "+ ez.getResult() +" DE 15 ZOMBIES\n\nPULSA PARA CONTINUAR";
+    }
 }

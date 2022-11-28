@@ -21,9 +21,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MobileAbuela.unity
     guid: df6f870f4f203fb458273f64b355c326
   - enabled: 1
-    path: Assets/Scenes/MobileRuleta.unity
+    path: Assets/Scenes/MobileMiniJuego.unity
     guid: c8ac997c4e3f2e44db723aa59002c6fe
   - enabled: 1
     path: Assets/Scenes/KillZomb.unity
     guid: 50a25d586d94d6c449238c350c049c2f
+  - enabled: 1
+    path: Assets/Scenes/MobileRuleta.unity
+    guid: e67f75e95db28f2429104f6cdff6843c
+  - enabled: 1
+    path: Assets/Scenes/RuletaMinigame2.unity
+    guid: 801584ee5a1b399479381ebbd89e9e85
+  - enabled: 1
+    path: Assets/Scenes/KillZomb2.unity
+    guid: cce7625f408f7924c970b11a487a5b30
   m_configObjects: {}

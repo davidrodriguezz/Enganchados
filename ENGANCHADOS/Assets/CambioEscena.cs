@@ -9,26 +9,21 @@ using EasyUI.PickerWheelUI;
 
 public class CambioEscena : MonoBehaviour
 {
-    public GameObject pickerWheel;
-    private string[] listaEscenas = { "Clase", "ColegioExt2" };
-    float time = 2.0f;
-    float timer = 0.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //public GameObject pickerWheel;
+    //private string[] listaEscenas = { "Clase", "ColegioExt2" };
+    //float time = 2.0f;
+    //float timer = 0.0f;
 
     // Update is called once per frame
     void Update()
     {
 
-        if (pickerWheel.GetComponent<PickerWheel>().cont > 0 && !pickerWheel.GetComponent<PickerWheel>().isSpinning())
-        {
-            timer += Time.deltaTime;
-            if (timer>=time)
-            Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect(listaEscenas[1], 0, 0) }));
-        }
+        //if (pickerWheel.GetComponent<PickerWheel>().cont > 0 && !pickerWheel.GetComponent<PickerWheel>().isSpinning())
+        //{
+        //    timer += Time.deltaTime;
+        //    if (timer>=time)
+        //    Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect(listaEscenas[1], 0, 0) }));
+        //}
 
     }
     public void CambiaARuleta()
@@ -43,9 +38,20 @@ public class CambioEscena : MonoBehaviour
     {
         Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("KillZomb", 0, 0) }));
     }
+    public void CambiaAJuego2()
+    {
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("KillZomb2", 0, 0) }));
+    }
+    public void CambiaAMovilJuego()
+    {
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("MobileMinijuego", 0, 0) }));
+    }
+    public void CambiaAMovilRuleta()
+    {
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("MobileRuleta", 0, 0) }));
+    }
     public void CambiaAMensajes()
     {
         Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("MobileAbuela", 0, 0) }));
-
     }
 }
