@@ -24,7 +24,7 @@ public class ZombieMov : MonoBehaviour
         {
             death.Play();
             this.GetComponent<SpriteRenderer>().enabled = false;
-            Destroy(this.gameObject, 3f);
+            Destroy(this.gameObject,0.5f);
             once = false;
         }
     }
