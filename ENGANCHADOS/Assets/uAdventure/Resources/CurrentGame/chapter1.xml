@@ -391,7 +391,7 @@
       <character-ref idTarget="Pibe1" x="726" y="607" scale="0.3195288" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+  <scene id="ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">

@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a30d81499783643833cb56e6c3ff24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombie: {fileID: 5755564050930304607, guid: b19d221a7e41b194690c9582de6c8ea5, type: 3}
+  zombie: {fileID: 5755564050930304607, guid: e601565b9243ade4c8658406c5f5e710, type: 3}
   bResult: {fileID: 1199086062}
   txtResult: {fileID: 1503216766}
   ez: {fileID: 1014099682}
