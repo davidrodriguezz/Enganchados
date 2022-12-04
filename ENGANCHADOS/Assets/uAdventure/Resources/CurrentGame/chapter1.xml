@@ -321,7 +321,7 @@
     </name>
     <default-initial-position x="1719" y="295" />
     <exits>
-      <exit rectangular="yes" x="-39" y="-6" width="183" height="1179" hasInfluenceArea="no" idTarget="ColegioExt" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="-39" y="-6" width="183" height="1179" hasInfluenceArea="no" idTarget="ColegioExt" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="5" transitionTime="4" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="salirCasa" />
@@ -401,10 +401,10 @@
     </name>
     <default-initial-position x="1024" y="768" />
     <exits>
-      <exit rectangular="yes" x="-1" y="2" width="150" height="1027" hasInfluenceArea="no" idTarget="Habitacion2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="5" transitionTime="2" not-effects="no">
+      <exit rectangular="yes" x="-24" y="-28" width="241" height="1070" hasInfluenceArea="no" idTarget="Habitacion2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
-          <trigger-conversation idTarget="PensamientoAperturaCajas" guid="16ab3147-0abe-4cc4-aad5-6785d991e8df" />
+          <trigger-conversation idTarget="PensamientoPrimeraPartida" guid="5e406bd1-d901-4200-b416-c6aded564daa" />
           <condition />
         </post-effect>
       </exit>
@@ -422,9 +422,36 @@
     <name>
     </name>
     <default-initial-position x="1024" y="864" />
-    <characters>
-      <character-ref idTarget="NADA" x="423" y="1061" scale="16.38656" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
-    </characters>
+  </scene>
+  <scene id="Habitacion3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+    <active-areas>
+      <active-area id="Area1" rectangular="yes" x="267" y="223" width="1711" height="710" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="PensamientoAperturaCaja" guid="9b86f9bc-ab22-4887-b477-fa5b0c81f464" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
   </scene>
   <scene id="CasaAbuela" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -445,7 +472,7 @@
       </exit>
     </exits>
   </scene>
-  <scene id="Habitacion3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+  <scene id="Habitacion4" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -454,9 +481,57 @@
     <name>
     </name>
     <default-initial-position x="1024" y="864" />
-    <characters>
-      <character-ref idTarget="NADA2" x="1122" y="742" scale="9.308135" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
-    </characters>
+    <active-areas>
+      <active-area id="ActiveAreaId" rectangular="yes" x="217" y="231" width="1585" height="875" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="PensamientoPostSegundaPart" guid="1b7a3c34-3d03-46fd-b45d-ececc9b845a6" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
+    <trajectory>
+      <node id="initial" x="1024" y="864" scale="1.92" />
+      <node id="initialDupl" x="1025" y="864" scale="1.92" />
+      <initialnode id="initial" />
+      <side idStart="initial" idEnd="initialDupl" length="1" />
+    </trajectory>
+  </scene>
+  <scene id="Habitacion5" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+    <active-areas>
+      <active-area id="aa2" rectangular="yes" x="702" y="524" width="789" height="372" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no" />
+        </actions>
+      </active-area>
+    </active-areas>
   </scene>
   <graph-conversation id="PrimeraManana">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
@@ -917,7 +992,17 @@
         <text>#O He mejorado muchísimo. Voy a ser la envidia de la clase.</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Bueno voy a ir a dormir...</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-cutscene idTarget="Nextday" guid="ea3c270e-3fbc-4316-bf96-ccf1b494a1fa" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia2Habitacion">
@@ -949,4 +1034,17 @@
   <unity-scene id="MobileKillZomb1" scene="Assets/Scenes/MobileMiniJuego.unity" />
   <unity-scene id="KillZomb2" scene="Assets/Scenes/KillZomb2.unity" />
   <unity-scene id="MobileMiniJuego2" scene="Assets/Scenes/MobileMiniJuego2.unity" />
+  <slidescene id="Nextday" start="no" idTarget="Habitacion5" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <effect>
+      <trigger-conversation idTarget="Dia2Habitacion" guid="fb9c599a-7813-45e5-acc8-ea6015d28812" />
+      <condition />
+    </effect>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/dianext.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
 </eAdventure>
