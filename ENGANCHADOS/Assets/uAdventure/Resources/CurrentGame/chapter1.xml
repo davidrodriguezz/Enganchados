@@ -69,6 +69,13 @@
           <condition />
         </effect>
       </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: Dia3CasaAbuela</documentation>
+        <effect>
+          <trigger-conversation idTarget="Dia3CasaAbuela" guid="529bdcf9-3975-4664-9a5a-42687e208e70" />
+          <condition />
+        </effect>
+      </talk-to>
     </actions>
   </character>
   <character id="Madre" behaviour="normal">
@@ -140,6 +147,13 @@
           <condition />
         </effect>
       </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: Dia2Profe</documentation>
+        <effect>
+          <trigger-conversation idTarget="Dia2Profe" guid="94697296-b4f9-4f2a-bf7b-cd14aa659ea6" />
+          <condition />
+        </effect>
+      </talk-to>
     </actions>
   </character>
   <character id="Pibe1" behaviour="normal">
@@ -191,6 +205,20 @@
           <condition />
         </effect>
       </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: Dia2ColeExt</documentation>
+        <effect>
+          <trigger-conversation idTarget="Dia2ColeExt" guid="2d184770-1dd8-4b03-a6bf-c28030d2494b" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: Dia3ColegioExt</documentation>
+        <effect>
+          <trigger-conversation idTarget="Dia3ColegioExt" guid="511dddc5-07f6-4bd9-b374-1af123bf2996" />
+          <condition />
+        </effect>
+      </talk-to>
     </actions>
   </character>
   <character id="Pibe2" behaviour="normal">
@@ -228,6 +256,13 @@
         <documentation>Created with target conversation: DespuesClase</documentation>
         <effect>
           <trigger-conversation idTarget="DespuesClase" guid="a95ca03d-ed93-467c-8f6e-d2fc9a90659a" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: Dia2Quedar</documentation>
+        <effect>
+          <trigger-conversation idTarget="Dia2Quedar" guid="0f5677c1-2725-446e-a40e-b149cfb90aa2" />
           <condition />
         </effect>
       </talk-to>
@@ -311,7 +346,54 @@
       </talk-to>
     </actions>
   </character>
-  <scene id="Habitación" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
+  <character id="Pibe3" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: DespuesClase</documentation>
+        <effect>
+          <trigger-conversation idTarget="DespuesClase" guid="a95ca03d-ed93-467c-8f6e-d2fc9a90659a" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Created with target conversation: Dia2Quedar</documentation>
+        <effect>
+          <trigger-conversation idTarget="Dia2Quedar" guid="0f5677c1-2725-446e-a40e-b149cfb90aa2" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <scene id="Habitación" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -944,7 +1026,7 @@
     <dialogue-node nodeindex="0" editor-x="102" editor-y="45">
       <speak-player>
         <resources name="No name" />
-        <text>#O Bueno, ya que he terminado los deberes, me voy a echar una partidita.</text>
+        <text>#O Bueno, creo que hoy me puedo permitir un descanso, me voy a echar una partidita.</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -1020,6 +1102,592 @@
       <speak-player>
         <resources name="No name" />
         <text>#O Va a flipar.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia2ColeExt">
+    <dialogue-node nodeindex="0" editor-x="0" editor-y="30">
+      <speak-player>
+        <resources name="No name" />
+        <text>Hola ¿que tal?</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Ayer abrí una caja y me tocó el arma legendaria a la primera.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>No veas como mato con este arma.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="464" editor-y="41">
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>¡Vaya que suerte tienes!</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Yo ayer abrí un par pero nada.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Bueno, esta tarde veré si puedo jugar y abrir unas cajas.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Vamos adentro, que no quiero llegar tarde al examen.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="2" />
+    </dialogue-node>
+    <option-node nodeindex="2" random="yes" keepShowing="yes" editor-x="913" editor-y="41" x="913" y="41">
+      <speak-player>
+        <text>¿Cómo que examen?</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>
+        <text>¿Estarás de broma no?</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="3" editor-x="1283" editor-y="19">
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Claro si esta semana está llena de ellos.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="1280" editor-y="198">
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Bueno ahora se lo preguntas a la profe si no me crees.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="5" editor-x="1601" editor-y="104">
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Vamos anda.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia2Profe">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Profesora">
+        <resources name="No name" />
+        <text>Buenos días, separos en 4 filas que en nada reparto los exámenes.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>No puede ser verdad, se me olvidó por completo.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>No he tocado el libro.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Voy a suspender...</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia2Quedar">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>Oye al final vamos hoy al cine.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>¿Te vienes?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="598" editor-y="50" x="598" y="50">
+      <speak-player>
+        <text>Que va no tengo dinero.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Tendría que pedir dinero a mis padres.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="829" editor-y="43">
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>¿Y eso?</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Ayer gasté lo que tenía de paga abriendo una caja.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="834" editor-y="249">
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>Bueno pues si te dan algo vente.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="1248" editor-y="111">
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>Hasta mañana entonces.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia2PedirDinero">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Madre">
+        <resources name="No name" />
+        <text>Hola hijo, ¿que tal las clases?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="539" editor-y="50" x="539" y="50">
+      <speak-player>
+        <text>Bueno, se me olvidó que hoy tenía un examen.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Bien,  como siempre.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="757" editor-y="19">
+      <speak-char idTarget="Madre">
+        <resources name="No name" />
+        <text>Hijo tienes que estar más atento.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Madre">
+        <resources name="No name" />
+        <text>Estudia para los siguientes y no te preocupes.</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="786" editor-y="225">
+      <speak-player>
+        <resources name="No name" />
+        <text>Me alegro.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="1302" editor-y="64">
+      <speak-player>
+        <resources name="No name" />
+        <text>Oye mamá, te quería pedir un adelanto de la paga.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Me han dicho de ir al cine mis amigos y no tengo dinero.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Madre">
+        <resources name="No name" />
+        <text>Bueno... Si es para eso te doy 10 euros.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Madre">
+        <resources name="No name" />
+        <text>Muchas gracias.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia2PensamPartidaMala">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Como puede ser que ahora no mate como ayer.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O ¡AH, HAN ACTUALIZADO EL JUEGO! </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Ahora hay armas mejores y los enemigos tienen más vidas.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Voy a ver si puedo conseguir algún arma de esas con el dinero que me han dado.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia2AbrirCajas">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O ¡Qué mala suerte!</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Voy a necesitar abrir más cajas, pero ya me estoy quedando sin pasta.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Debería ponerme a estudiar ya.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia3Habitacion">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Madre">
+        <resources name="No name" />
+        <text>Buenos días.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Madre">
+        <resources name="No name" />
+        <text>Acuerdate que hoy tienes que irte a comer a casa de la abuela, que hoy tengo reunión en el trabajo.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vale mamá.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Madre">
+        <resources name="No name" />
+        <text>Y ve preparandote ya que si no vas a llegar tarde.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Voy.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia3ColegioExt">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Pibe3">
+        <resources name="No name" />
+        <text>¡Que guay estuvo ayer la quedada!</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>¡Sí te tendrías que haber venido!</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Oh lo siento chicos al final no pude.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Bueno no pasa nada, ya volveremos otro día.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Bueno vamos dentro que espero que el examen de hoy vaya mejor.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe3">
+        <resources name="No name" />
+        <text>Venga a ver si hay suerte.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia3Clase">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Primera pregunta:</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" question="¿Cuantos huesos tiene el cuerpo humano adulto ?" random="yes" editor-x="538" editor-y="50" x="538" y="50">
+      <speak-player>
+        <text>306</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>106</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>
+        <text>206</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="795" editor-y="39">
+      <speak-player>
+        <resources name="No name" />
+        <text>Tiene que ser esta.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="793" editor-y="223">
+      <speak-player>
+        <resources name="No name" />
+        <text>Es esta seguro.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="795" editor-y="404">
+      <speak-player>
+        <resources name="No name" />
+        <text>No puedo fallar aquí.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <option-node nodeindex="5" question="¿Qué es el sindrome de Alejandría?" random="yes" editor-x="1050" editor-y="152" x="1050" y="152">
+      <speak-player>
+        <text>Tener ojos morados.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="6" />
+      <speak-player>
+        <text>Tener ojos grises.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="7" />
+      <speak-player>
+        <text>Tener un ojo de cada color.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="8" />
+    </option-node>
+    <dialogue-node nodeindex="6" editor-x="1285" editor-y="13">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Qué son estas preguntas?</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="7" editor-x="1285" editor-y="204">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Qué son estas preguntas?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="9" />
+    </dialogue-node>
+    <dialogue-node nodeindex="8" editor-x="1285" editor-y="395">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Qué son estas preguntas?</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+    <option-node nodeindex="9" question="¿Dónde está el desierto de Atacama?" random="yes" editor-x="1520" editor-y="204" x="1520" y="204">
+      <speak-player>
+        <text>Chile</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="10" />
+      <speak-player>
+        <text>Argentina</text>
+        <resources name="No name">
+          <asset type="image" uri="" />
+        </resources>
+      </speak-player>
+      <condition />
+      <child nodeindex="11" />
+      <speak-player>
+        <text>Marruecos</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="12" />
+    </option-node>
+    <dialogue-node nodeindex="10" editor-x="1856" editor-y="49">
+      <speak-player>
+        <resources name="No name" />
+        <text>Esto no estaba en mis apuntes.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="11" editor-x="1856" editor-y="240">
+      <speak-player>
+        <resources name="No name" />
+        <text>Esto no estaba en mis apuntes.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="12" editor-x="1856" editor-y="431">
+      <speak-player>
+        <resources name="No name" />
+        <text>Esto no estaba en mis apuntes.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia3SalirColegio">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Oye chavales como habéis visto el examen?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Normalito.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>Sí no se ha pasado mucho la verdad.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe3">
+        <resources name="No name" />
+        <text>Yo creo que sacaré un notable.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vaya... yo no se si aprobaré.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Ya se verán las notas en unos días.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Sí, no pensaré mucho en ello.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Hoy me tengo que ir con mi abuela.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Hasta luego.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia3CasaAbuela">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Abuela">
+        <resources name="No name" />
+        <text>¿Como está mi nieto?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="415" editor-y="50" x="415" y="50">
+      <speak-player>
+        <text>Bien un poco cansado de tantos exámenes.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Como siempre, con mucha hambre.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="683" editor-y="0">
+      <speak-char idTarget="Abuela">
+        <resources name="No name" />
+        <text>No te preocupes, ahora voy a hacer la comida y verás que todo va a mejor.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! **Beep, Beep** </text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="655" editor-y="216">
+      <speak-char idTarget="Abuela">
+        <resources name="No name" />
+        <text>No te preocupes, ahora voy a hacer la comida y verás que todo va a mejor.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! **Beep, Beep** </text>
       </speak-player>
       <condition />
       <end-conversation />
