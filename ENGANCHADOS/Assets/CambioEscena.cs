@@ -56,7 +56,7 @@ public class CambioEscena : MonoBehaviour
     }
     public void CambiaAHabitacion3()
     {
-        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("Habitacion3", 0, 0) }));
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("Dia1Habitacion3", 0, 0) }));
 
     }
     public void CambiaAMovilJuego2()
@@ -65,7 +65,7 @@ public class CambioEscena : MonoBehaviour
     }
     public void CambiaAHabitacion4()
     {
-        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("Habitacion4", 0, 0) }));
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("Dia1Habitacion4", 0, 0) }));
 
 
     }

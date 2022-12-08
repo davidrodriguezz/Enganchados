@@ -142,6 +142,9 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: ProfesoraAvisoExamenes</documentation>
+        <condition>
+          <equals var="TicherTokin" value="0" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="ProfesoraAvisoExamenes" guid="f3e5ff7d-c5da-4bcf-a656-8c502887f765" />
           <condition />
@@ -149,6 +152,9 @@
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: Dia2Profe</documentation>
+        <condition>
+          <equals var="TicherTokin" value="1" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="Dia2Profe" guid="94697296-b4f9-4f2a-bf7b-cd14aa659ea6" />
           <condition />
@@ -207,6 +213,9 @@
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: Dia2ColeExt</documentation>
+        <condition>
+          <equals var="hablado" value="2" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="Dia2ColeExt" guid="2d184770-1dd8-4b03-a6bf-c28030d2494b" />
           <condition />
@@ -254,6 +263,9 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: DespuesClase</documentation>
+        <condition>
+          <equals var="habladopibe2" value="0" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="DespuesClase" guid="a95ca03d-ed93-467c-8f6e-d2fc9a90659a" />
           <condition />
@@ -261,6 +273,9 @@
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: Dia2Quedar</documentation>
+        <condition>
+          <equals var="habladopibe2" value="1" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="Dia2Quedar" guid="0f5677c1-2725-446e-a40e-b149cfb90aa2" />
           <condition />
@@ -393,7 +408,7 @@
       </talk-to>
     </actions>
   </character>
-  <scene id="Habitación" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1" class="accesible" type="area">
+  <scene id="Dia1Habitacion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -403,7 +418,7 @@
     </name>
     <default-initial-position x="1719" y="295" />
     <exits>
-      <exit rectangular="yes" x="-39" y="-6" width="183" height="1179" hasInfluenceArea="no" idTarget="ColegioExt" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="5" transitionTime="4" not-effects="no">
+      <exit rectangular="yes" x="-39" y="-6" width="183" height="1179" hasInfluenceArea="no" idTarget="Dia1ColegioExt" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="5" transitionTime="4" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
           <active flag="salirCasa" />
@@ -414,7 +429,7 @@
       <character-ref idTarget="Abuela" x="350" y="1112" scale="0.9865363" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="ColegioExt" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
+  <scene id="Dia1ColegioExt" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -424,7 +439,7 @@
     </name>
     <default-initial-position x="1024" y="768" />
     <exits>
-      <exit rectangular="no" x="943" y="448" width="256" height="258" hasInfluenceArea="no" idTarget="Clase" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="no" x="943" y="448" width="256" height="258" hasInfluenceArea="no" idTarget="Dia1Clase" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <point x="965" y="448" />
         <point x="1167" y="448" />
@@ -439,7 +454,7 @@
       <character-ref idTarget="Pibe1" x="1560" y="970" scale="0.787311" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="0.6733333" class="accesible" type="area">
+  <scene id="Dia1Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="0.6733333" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -452,7 +467,7 @@
       <character-ref idTarget="Profesora" x="790" y="941" scale="0.9827529" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Gym" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
+  <scene id="Dia1Gym" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -462,10 +477,10 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="85" y="397" width="100" height="151" hasInfluenceArea="no" idTarget="ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="85" y="397" width="100" height="151" hasInfluenceArea="no" idTarget="Dia1ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
-      <exit rectangular="yes" x="1934" y="398" width="63" height="172" hasInfluenceArea="no" idTarget="ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="1934" y="398" width="63" height="172" hasInfluenceArea="no" idTarget="Dia1ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
       </exit>
     </exits>
@@ -473,7 +488,7 @@
       <character-ref idTarget="Pibe1" x="726" y="607" scale="0.3195288" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+  <scene id="Dia1ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -483,7 +498,7 @@
     </name>
     <default-initial-position x="1024" y="768" />
     <exits>
-      <exit rectangular="yes" x="-24" y="-28" width="241" height="1070" hasInfluenceArea="no" idTarget="Habitacion2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="-24" y="-28" width="241" height="1070" hasInfluenceArea="no" idTarget="Dia1Habitacion2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <post-effect>
           <trigger-conversation idTarget="PensamientoPrimeraPartida" guid="5e406bd1-d901-4200-b416-c6aded564daa" />
@@ -495,7 +510,7 @@
       <character-ref idTarget="Pibe2" x="1652" y="936" scale="0.6341843" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Habitacion2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+  <scene id="Dia1Habitacion2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -505,7 +520,7 @@
     </name>
     <default-initial-position x="1024" y="864" />
   </scene>
-  <scene id="Habitacion3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+  <scene id="Dia1Habitacion3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -515,7 +530,7 @@
     </name>
     <default-initial-position x="1024" y="864" />
     <active-areas>
-      <active-area id="Area1" rectangular="yes" x="267" y="223" width="1711" height="710" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="Area1" rectangular="yes" x="-43" y="-24" width="2153" height="1207" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -535,26 +550,7 @@
       </active-area>
     </active-areas>
   </scene>
-  <scene id="CasaAbuela" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/salon.jpg" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="1024" y="558" />
-    <exits>
-      <exit rectangular="no" x="1619" y="135" width="203" height="608" hasInfluenceArea="no" idTarget="Clase" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" cursor-path="" sound-path="" />
-        <point x="1637" y="200" />
-        <point x="1822" y="135" />
-        <point x="1794" y="743" />
-        <point x="1619" y="629" />
-      </exit>
-    </exits>
-  </scene>
-  <scene id="Habitacion4" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+  <scene id="Dia1Habitacion4" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -564,7 +560,7 @@
     </name>
     <default-initial-position x="1024" y="864" />
     <active-areas>
-      <active-area id="ActiveAreaId" rectangular="yes" x="217" y="231" width="1585" height="875" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="ActiveAreaId" rectangular="yes" x="-26" y="-8" width="2139" height="1188" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -590,7 +586,7 @@
       <side idStart="initial" idEnd="initialDupl" length="1" />
     </trajectory>
   </scene>
-  <scene id="Habitacion5" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+  <scene id="Dia2Habitacion1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -599,21 +595,95 @@
     <name>
     </name>
     <default-initial-position x="1024" y="864" />
-    <active-areas>
-      <active-area id="aa2" rectangular="yes" x="702" y="524" width="789" height="372" hasInfluenceArea="no" behaviour="normal">
-        <description>
-          <name>
-          </name>
-          <brief>
-          </brief>
-          <detailed>
-          </detailed>
-        </description>
-        <actions>
-          <examine needsGoTo="no" keepDistance="0" not-effects="no" />
-        </actions>
-      </active-area>
-    </active-areas>
+    <exits>
+      <exit rectangular="yes" x="-52" y="-14" width="265" height="1196" hasInfluenceArea="no" idTarget="Dia2ColegioExt" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
+  </scene>
+  <scene id="Dia2ColegioExt" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/colegioExt.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="768" />
+    <characters>
+      <character-ref idTarget="Pibe1" x="345" y="836" scale="0.5351604" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="Dia2Clase" hideInventory="no" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/clase2.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="768" />
+    <exits>
+      <exit rectangular="no" x="598" y="272" width="909" height="406" hasInfluenceArea="no" idTarget="Dia2Examen" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+        <point x="598" y="272" />
+        <point x="1507" y="275" />
+        <point x="1468" y="667" />
+        <point x="641" y="678" />
+        <condition>
+          <equals var="TicherTokin" value="2" />
+        </condition>
+        <post-effect>
+          <trigger-conversation idTarget="Dia2Ex" guid="43c2e6e6-b1c9-4a21-a950-9dd8a281fe70" />
+          <condition />
+        </post-effect>
+      </exit>
+    </exits>
+    <characters>
+      <character-ref idTarget="Profesora" x="398" y="957" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="Dia2Examen" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.8" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/examenClase.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="960" y="810" />
+  </scene>
+  <scene id="Dia2ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/colegioExt.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <characters>
+      <character-ref idTarget="Pibe2" x="731" y="867" scale="0.6032107" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="Dia3CasaAbuela1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/salon.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="558" />
+    <exits>
+      <exit rectangular="no" x="1619" y="135" width="203" height="608" hasInfluenceArea="no" idTarget="Dia1Clase" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+        <point x="1637" y="200" />
+        <point x="1822" y="135" />
+        <point x="1794" y="743" />
+        <point x="1619" y="629" />
+      </exit>
+    </exits>
   </scene>
   <graph-conversation id="PrimeraManana">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
@@ -834,7 +904,9 @@
       <condition />
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="Gym" x="1024" y="483" transitionTime="0" transitionType="5" guid="082079e9-cb63-4b2d-b891-3cb20cfe4c40" />
+          <trigger-scene idTarget="Dia1Gym" x="1024" y="483" transitionTime="0" transitionType="5" guid="082079e9-cb63-4b2d-b891-3cb20cfe4c40" />
+          <condition />
+          <increment var="TicherTokin" value="1" guid="2c8e23af-de40-4f55-910c-28a9d49c2249" />
           <condition />
         </effect>
       </end-conversation>
@@ -924,7 +996,12 @@
         <text>Vamos ya ha terminado la clase, ¡a casa!</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="hablado" value="1" guid="ddaf8389-cb0f-4bb7-ab3a-6bdd1f3db2af" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="931" editor-y="337">
       <speak-char idTarget="Pibe1">
@@ -947,7 +1024,12 @@
         <text>Vamos ya ha terminado la clase, ¡a casa!</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="hablado" value="1" guid="5d63235d-e152-4cf3-873a-167f666025ad" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="DespuesClase">
@@ -1019,7 +1101,12 @@
         <text>Claro, luego hablamos</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="habladopibe2" value="1" guid="d75b2f61-c135-468f-8299-75b3d9311225" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="PensamientoPrimeraPartida">
@@ -1185,7 +1272,12 @@
         <text>Vamos anda.</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="Dia2Clase" x="1024" y="768" transitionTime="0" transitionType="0" guid="d583015a-ac6c-4082-9bff-f8b1e252bde6" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia2Profe">
@@ -1210,7 +1302,187 @@
         <text>Voy a suspender...</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="TicherTokin" value="1" guid="4155c398-ba3c-4f04-80c8-621ea66277ba" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia2Ex">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Primera pregunta: ¿Cuantos huesos tiene el cuerpo humano adulto?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="419" editor-y="28" x="419" y="28">
+      <speak-player>
+        <text>306</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>106</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>
+        <text>206</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="777" editor-y="23">
+      <speak-player>
+        <resources name="No name" />
+        <text>Tiene que ser esta.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="641" editor-y="216">
+      <speak-player>
+        <resources name="No name" />
+        <text>Es esta seguro.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="795" editor-y="404">
+      <speak-player>
+        <resources name="No name" />
+        <text>No puedo fallar aquí.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="5" editor-x="878" editor-y="206">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O ¿Qué es el sindrome de Alejandría?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="6" />
+    </dialogue-node>
+    <option-node nodeindex="6" question="¿Qué es el sindrome de Alejandría?" random="yes" keepShowing="yes" preListening="yes" editor-x="1079" editor-y="132" x="1079" y="132">
+      <speak-player>
+        <text>Tener ojos morados.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="7" />
+      <speak-player>
+        <text>Tener ojos grises.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="8" />
+      <speak-player>
+        <text>Tener un ojo de cada color.</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="9" />
+    </option-node>
+    <dialogue-node nodeindex="7" editor-x="1285" editor-y="13">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Qué son estas preguntas?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="10" />
+    </dialogue-node>
+    <dialogue-node nodeindex="8" editor-x="1297" editor-y="208">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Qué son estas preguntas?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="10" />
+    </dialogue-node>
+    <dialogue-node nodeindex="9" editor-x="1285" editor-y="395">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Qué son estas preguntas?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="10" />
+    </dialogue-node>
+    <dialogue-node nodeindex="10" editor-x="1522" editor-y="193">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Última pregunta: ¿Dónde está el desierto de Atacama?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="11" />
+    </dialogue-node>
+    <option-node nodeindex="11" question="¿Dónde está el desierto de Atacama?" random="yes" preListening="yes" editor-x="1708" editor-y="135" x="1708" y="135">
+      <speak-player>
+        <text>Chile</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="12" />
+      <speak-player>
+        <text>Argentina</text>
+        <resources name="No name">
+          <asset type="image" uri="" />
+        </resources>
+      </speak-player>
+      <condition />
+      <child nodeindex="13" />
+      <speak-player>
+        <text>Marruecos</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="14" />
+    </option-node>
+    <dialogue-node nodeindex="12" editor-x="1856" editor-y="49">
+      <speak-player>
+        <resources name="No name" />
+        <text>Esto no estaba en mis apuntes.</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="Dia2ColegioExt2" x="1024" y="768" transitionTime="0" transitionType="0" guid="17e690fe-afa6-4a02-8d55-71e443669dba" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="13" editor-x="1856" editor-y="240">
+      <speak-player>
+        <resources name="No name" />
+        <text>Esto no estaba en mis apuntes.</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="Dia2ColegioExt2" x="1024" y="768" transitionTime="0" transitionType="0" guid="f3200a77-f794-459f-81f4-ff697995e36b" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="14" editor-x="1856" editor-y="431">
+      <speak-player>
+        <resources name="No name" />
+        <text>Esto no estaba en mis apuntes.</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="Dia2ColegioExt2" x="1024" y="768" transitionTime="0" transitionType="0" guid="ddd80881-dc55-4db6-a2dc-18ad765d94bd" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia2Quedar">
@@ -1227,7 +1499,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="598" editor-y="50" x="598" y="50">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="465" editor-y="33" x="465" y="33">
       <speak-player>
         <text>Que va no tengo dinero.</text>
         <resources name="No name" />
@@ -1268,7 +1540,12 @@
         <text>Hasta mañana entonces.</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="habladopibe2" value="1" guid="57e643cd-66e9-4cd9-b7a5-b5084d2616c7" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia2PedirDinero">
@@ -1445,150 +1722,6 @@
         <resources name="No name" />
         <text>Venga a ver si hay suerte.</text>
       </speak-char>
-      <condition />
-      <end-conversation />
-    </dialogue-node>
-  </graph-conversation>
-  <graph-conversation id="Dia3Clase">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-player>
-        <resources name="No name" />
-        <text>#O Primera pregunta:</text>
-      </speak-player>
-      <condition />
-      <child nodeindex="1" />
-    </dialogue-node>
-    <option-node nodeindex="1" question="¿Cuantos huesos tiene el cuerpo humano adulto ?" random="yes" preListening="yes" editor-x="538" editor-y="50" x="538" y="50">
-      <speak-player>
-        <text>306</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="2" />
-      <speak-player>
-        <text>106</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="3" />
-      <speak-player>
-        <text>206</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="4" />
-    </option-node>
-    <dialogue-node nodeindex="2" editor-x="795" editor-y="39">
-      <speak-player>
-        <resources name="No name" />
-        <text>Tiene que ser esta.</text>
-      </speak-player>
-      <condition />
-      <child nodeindex="5" />
-    </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="793" editor-y="223">
-      <speak-player>
-        <resources name="No name" />
-        <text>Es esta seguro.</text>
-      </speak-player>
-      <condition />
-      <child nodeindex="5" />
-    </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="795" editor-y="404">
-      <speak-player>
-        <resources name="No name" />
-        <text>No puedo fallar aquí.</text>
-      </speak-player>
-      <condition />
-      <child nodeindex="5" />
-    </dialogue-node>
-    <option-node nodeindex="5" question="¿Qué es el sindrome de Alejandría?" random="yes" preListening="yes" editor-x="1050" editor-y="152" x="1050" y="152">
-      <speak-player>
-        <text>Tener ojos morados.</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="6" />
-      <speak-player>
-        <text>Tener ojos grises.</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="7" />
-      <speak-player>
-        <text>Tener un ojo de cada color.</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="8" />
-    </option-node>
-    <dialogue-node nodeindex="6" editor-x="1285" editor-y="13">
-      <speak-player>
-        <resources name="No name" />
-        <text>¿Qué son estas preguntas?</text>
-      </speak-player>
-      <condition />
-      <end-conversation />
-    </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="1285" editor-y="204">
-      <speak-player>
-        <resources name="No name" />
-        <text>¿Qué son estas preguntas?</text>
-      </speak-player>
-      <condition />
-      <child nodeindex="9" />
-    </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="1285" editor-y="395">
-      <speak-player>
-        <resources name="No name" />
-        <text>¿Qué son estas preguntas?</text>
-      </speak-player>
-      <condition />
-      <end-conversation />
-    </dialogue-node>
-    <option-node nodeindex="9" question="¿Dónde está el desierto de Atacama?" random="yes" preListening="yes" editor-x="1520" editor-y="204" x="1520" y="204">
-      <speak-player>
-        <text>Chile</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="10" />
-      <speak-player>
-        <text>Argentina</text>
-        <resources name="No name">
-          <asset type="image" uri="" />
-        </resources>
-      </speak-player>
-      <condition />
-      <child nodeindex="11" />
-      <speak-player>
-        <text>Marruecos</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="12" />
-    </option-node>
-    <dialogue-node nodeindex="10" editor-x="1856" editor-y="49">
-      <speak-player>
-        <resources name="No name" />
-        <text>Esto no estaba en mis apuntes.</text>
-      </speak-player>
-      <condition />
-      <end-conversation />
-    </dialogue-node>
-    <dialogue-node nodeindex="11" editor-x="1856" editor-y="240">
-      <speak-player>
-        <resources name="No name" />
-        <text>Esto no estaba en mis apuntes.</text>
-      </speak-player>
-      <condition />
-      <end-conversation />
-    </dialogue-node>
-    <dialogue-node nodeindex="12" editor-x="1856" editor-y="431">
-      <speak-player>
-        <resources name="No name" />
-        <text>Esto no estaba en mis apuntes.</text>
-      </speak-player>
       <condition />
       <end-conversation />
     </dialogue-node>
@@ -1924,7 +2057,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="289" editor-y="44" x="289" y="44">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="289" editor-y="44" x="289" y="44">
       <speak-player>
         <text>Sí.</text>
         <resources name="No name" />
@@ -2014,7 +2147,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="285" editor-y="50" x="285" y="50">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="285" editor-y="50" x="285" y="50">
       <speak-player>
         <text>Todo bien, mamá.</text>
         <resources name="No name" />
@@ -2125,7 +2258,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="285" editor-y="50" x="285" y="50">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="285" editor-y="50" x="285" y="50">
       <speak-player>
         <text>Está todo bien</text>
         <resources name="No name" />
@@ -2170,7 +2303,7 @@
       <condition />
       <end-conversation />
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" keepShowing="yes" editor-x="904" editor-y="50" x="904" y="50">
+    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="904" editor-y="50" x="904" y="50">
       <speak-player>
         <text>Sí todo bien.</text>
         <resources name="No name" />
@@ -2197,7 +2330,7 @@
       <condition />
       <child nodeindex="6" />
     </dialogue-node>
-    <option-node nodeindex="6" random="yes" keepShowing="yes" editor-x="1617" editor-y="50" x="1617" y="50">
+    <option-node nodeindex="6" random="yes" keepShowing="yes" preListening="yes" editor-x="1617" editor-y="50" x="1617" y="50">
       <speak-player>
         <text>He sido yo. Me siento culpable.</text>
         <resources name="No name" />
@@ -2215,7 +2348,7 @@
   <unity-scene id="MobileKillZomb1" scene="Assets/Scenes/MobileMiniJuego.unity" />
   <unity-scene id="KillZomb2" scene="Assets/Scenes/KillZomb2.unity" />
   <unity-scene id="MobileMiniJuego2" scene="Assets/Scenes/MobileMiniJuego2.unity" />
-  <slidescene id="Nextday" start="no" idTarget="Habitacion5" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <slidescene id="Nextday" start="no" idTarget="Dia2Habitacion1" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <effect>
