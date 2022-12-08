@@ -1149,7 +1149,7 @@
       <condition />
       <child nodeindex="2" />
     </dialogue-node>
-    <option-node nodeindex="2" random="yes" keepShowing="yes" editor-x="913" editor-y="41" x="913" y="41">
+    <option-node nodeindex="2" random="yes" keepShowing="yes" preListening="yes" editor-x="913" editor-y="41" x="913" y="41">
       <speak-player>
         <text>¿Cómo que examen?</text>
         <resources name="No name" />
@@ -1227,7 +1227,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="598" editor-y="50" x="598" y="50">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="598" editor-y="50" x="598" y="50">
       <speak-player>
         <text>Que va no tengo dinero.</text>
         <resources name="No name" />
@@ -1280,7 +1280,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="539" editor-y="50" x="539" y="50">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="539" editor-y="50" x="539" y="50">
       <speak-player>
         <text>Bueno, se me olvidó que hoy tenía un examen.</text>
         <resources name="No name" />
@@ -1458,7 +1458,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" question="¿Cuantos huesos tiene el cuerpo humano adulto ?" random="yes" editor-x="538" editor-y="50" x="538" y="50">
+    <option-node nodeindex="1" question="¿Cuantos huesos tiene el cuerpo humano adulto ?" random="yes" preListening="yes" editor-x="538" editor-y="50" x="538" y="50">
       <speak-player>
         <text>306</text>
         <resources name="No name" />
@@ -1502,7 +1502,7 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="5" question="¿Qué es el sindrome de Alejandría?" random="yes" editor-x="1050" editor-y="152" x="1050" y="152">
+    <option-node nodeindex="5" question="¿Qué es el sindrome de Alejandría?" random="yes" preListening="yes" editor-x="1050" editor-y="152" x="1050" y="152">
       <speak-player>
         <text>Tener ojos morados.</text>
         <resources name="No name" />
@@ -1546,7 +1546,7 @@
       <condition />
       <end-conversation />
     </dialogue-node>
-    <option-node nodeindex="9" question="¿Dónde está el desierto de Atacama?" random="yes" editor-x="1520" editor-y="204" x="1520" y="204">
+    <option-node nodeindex="9" question="¿Dónde está el desierto de Atacama?" random="yes" preListening="yes" editor-x="1520" editor-y="204" x="1520" y="204">
       <speak-player>
         <text>Chile</text>
         <resources name="No name" />
@@ -1652,7 +1652,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="415" editor-y="50" x="415" y="50">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="415" editor-y="50" x="415" y="50">
       <speak-player>
         <text>Bien un poco cansado de tantos exámenes.</text>
         <resources name="No name" />
@@ -1690,6 +1690,228 @@
         <text>#! **Beep, Beep** </text>
       </speak-player>
       <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia3PostWhatsApp">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Joder, a todo el mundo le están tocando cosas y a mí nada.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Pero no puedo abrir cajas, me gasté toda la paga que me dieron.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O ¿Qué hago, qué hago?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" editor-x="546" editor-y="53" x="546" y="53">
+      <speak-player>
+        <text>Robar a la abuela</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Robar a la abuela</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>
+        <text>Robar a la abuela</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="766" editor-y="53">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Le robaré dinero a la abuela, no creo que pase nada.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="766" editor-y="244">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Le robaré dinero a la abuela, no creo que pase nada.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="766" editor-y="434">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Le robaré dinero a la abuela, no creo que pase nada.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <dialogue-node nodeindex="5" editor-x="1067" editor-y="235">
+      <speak-player>
+        <resources name="No name" />
+        <text>+ 100 créditos</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Ahora me tocarán muchas cosas y me reiré de mis amigos en toda su cara.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#! ¡¡¡A comer!!!</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Voy abuela.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia3DespuesDeComer">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Ahora que ya he comido, voy a abrir muchas cajas y voy a ser imparable.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia3PostApertura">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>#O No me ha tocado nada interesante y además me he metido en un lío gordo.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Necesito una forma de abrir cajas ya, sino no seré el más importante.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Ya sé, le pediré ayuda a mis amigos de clase. Ellos no me fallarán.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia4Ext">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>Hola tío, ¿qué tal?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>He oído rumores de que hoy la profe nos va a dar la nota del examen. Espero aprobar.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>La verdad que no me importa mucho la nota la verdad.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Me podrías hacer un favor?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>Dime.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Me podrías dejar dinero para abrir cajas? Te lo devolveré cuanto antes.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>¿Pero qué dices tío? ¿Cuánto dinero te has gastado en cajas?</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Eso no te importa. ¿Me lo vas a dar o no?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe2">
+        <resources name="No name" />
+        <text>Estás como una cabra. Necesitas ayuda profesional, no me hables más.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia4Ext2">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Hey, ¿preparado para la nota del examen?</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Yo seguro que apruebo, siempre saco buenas notas.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Ayúdame con otra cosa. ¿Me puedes dejar 20 créditos?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>¿Se puede saber para qué necesitas tanto dinero?</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Quiero abrir cajas del KillZomb.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Para eso no te voy a dejar dinero. Pídele dinero a tu madre o a tu abuela.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>No, ayer le robé a mi abuela 100 créditos.</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Pibe1">
+        <resources name="No name" />
+        <text>Estás enfermo, ¿cómo le puedes hacer eso a tu abuela? No quiero que sepas nada de nosotros.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vale chao.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Dia4Ext3">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
