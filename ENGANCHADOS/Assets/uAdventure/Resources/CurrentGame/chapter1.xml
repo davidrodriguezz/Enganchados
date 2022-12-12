@@ -64,15 +64,25 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: PrimeraManana</documentation>
+        <condition>
+          <equals var="habladoabu" value="0" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="PrimeraManana" guid="0507cb16-fd0e-4cd0-8b01-18c2f3dc93f8" />
+          <condition />
+          <increment var="habladoabu" value="1" guid="7d583b35-d6f1-4263-b677-f415d91450c0" />
           <condition />
         </effect>
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: Dia3CasaAbuela</documentation>
+        <condition>
+          <equals var="habladoabu" value="1" />
+        </condition>
         <effect>
           <trigger-conversation idTarget="Dia3CasaAbuela" guid="529bdcf9-3975-4664-9a5a-42687e208e70" />
+          <condition />
+          <increment var="habladoabu" value="1" guid="c19b7edb-bd63-4bb5-8743-809a4242f270" />
           <condition />
         </effect>
       </talk-to>
@@ -108,6 +118,32 @@
       </detailed>
     </description>
     <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladomama" value="0" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia2PedirDinero" guid="c68c06ab-dda3-47d3-9a4c-8528cdb46ce8" />
+          <condition />
+          <increment var="habladomama" value="1" guid="0bdda43d-9f0e-48a6-90f7-e2856460788c" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladomama" value="1" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia3Habitacion" guid="33a6ff8d-a39b-4d4a-b6b7-bfe5dfde1d76" />
+          <condition />
+          <increment var="habladomama" value="1" guid="ee619062-67cd-4441-8f9f-87ab9819cf95" />
+          <condition />
+          <move-npc idTarget="Madre" x="-430" y="1087" guid="da1fd5df-ea6d-45e4-9033-ec9da7d65339" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
   </character>
   <character id="Profesora" behaviour="normal">
     <resources name="No name">
@@ -228,6 +264,30 @@
           <condition />
         </effect>
       </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladogrupo" value="0" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia3ColegioExt" guid="91fd231b-6a34-4e88-a548-200917d6661b" />
+          <condition />
+          <increment var="habladogrupo" value="1" guid="04f90b11-a980-4e26-afc6-6e51dd93619d" />
+          <condition />
+          <trigger-cutscene idTarget="Postclass" guid="b4d4b6c3-31c3-440c-adb6-22afff77250e" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladogrupo" value="1" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia3SalirColegio" guid="2afa34f9-b4d5-4c45-827f-ec258acf0356" />
+          <condition />
+          <increment var="habladogrupo" value="1" guid="e6971eb6-80e5-4b00-9455-73201c7033bc" />
+          <condition />
+        </effect>
+      </talk-to>
     </actions>
   </character>
   <character id="Pibe2" behaviour="normal">
@@ -278,6 +338,30 @@
         </condition>
         <effect>
           <trigger-conversation idTarget="Dia2Quedar" guid="0f5677c1-2725-446e-a40e-b149cfb90aa2" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladogrupo" value="0" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia3ColegioExt" guid="3bebea0b-5e92-48da-822f-094992901193" />
+          <condition />
+          <trigger-cutscene idTarget="Postclass" guid="dafd6527-e241-4c24-9c84-14eaaa190acf" />
+          <condition />
+          <increment var="habladogrupo" value="1" guid="8bc5143b-516c-4dbd-bc62-4e99c719b2ef" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladogrupo" value="1" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia3SalirColegio" guid="dc1193dc-3bc1-4961-8d7e-2672edb4700c" />
+          <condition />
+          <increment var="habladogrupo" value="1" guid="1a1eb13a-a094-432f-a567-0413b36cf3b7" />
           <condition />
         </effect>
       </talk-to>
@@ -363,8 +447,8 @@
   </character>
   <character id="Pibe3" behaviour="normal">
     <resources name="No name">
-      <asset type="standup" uri="assets/animation/Pibinho2.eaa.xml" />
-      <asset type="standdown" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standup" uri="assets/animation/pib3.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/pib3.eaa.xml" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
       <asset type="speakup" uri="assets/special/EmptyAnimation" />
@@ -403,6 +487,30 @@
         <documentation>Created with target conversation: Dia2Quedar</documentation>
         <effect>
           <trigger-conversation idTarget="Dia2Quedar" guid="0f5677c1-2725-446e-a40e-b149cfb90aa2" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladogrupo" value="0" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia3ColegioExt" guid="227c28a0-9b49-4a80-838d-ed7ffe5db7fc" />
+          <condition />
+          <trigger-cutscene idTarget="Postclass" guid="037d52a7-634e-4c8a-9923-1b0d17044af6" />
+          <condition />
+          <increment var="habladogrupo" value="1" guid="fd634696-cd08-41a0-9ffa-82e31aa743d5" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladogrupo" value="2" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia3SalirColegio" guid="25a446bd-528f-403d-8051-07a364569460" />
+          <condition />
+          <increment var="habladogrupo" value="1" guid="18417468-442d-451a-869f-1f918c9ca471" />
           <condition />
         </effect>
       </talk-to>
@@ -662,8 +770,147 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="-9" y="-19" width="165" height="1085" hasInfluenceArea="no" idTarget="Dia2Habitacion2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" />
+      </exit>
+    </exits>
     <characters>
       <character-ref idTarget="Pibe2" x="731" y="867" scale="0.6032107" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="Dia2Habitacion2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+    <characters>
+      <character-ref idTarget="Madre" x="1678" y="1041" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="Dia2Habitacion3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+    <active-areas>
+      <active-area id="ActiveAreaId1" rectangular="yes" x="-47" y="-24" width="2150" height="1236" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="Dia2PensamPartidaMala" guid="58906748-8660-4957-89b7-65960afc5ecc" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
+  </scene>
+  <scene id="Dia2Habitacion4" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+    <active-areas>
+      <active-area id="ActiveAreaId2" rectangular="yes" x="-133" y="-101" width="2233" height="1289" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="Dia2AbrirCajas" guid="814c4b08-c477-46a6-b2f1-44979185dc4b" />
+              <condition />
+              <trigger-cutscene idTarget="Nextday2" guid="a24c3c02-352f-4f0f-a7e2-af037e69e382" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
+  </scene>
+  <scene id="Dia3Habitacion1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+    <exits>
+      <exit rectangular="yes" x="-54" y="-42" width="177" height="1243" hasInfluenceArea="no" idTarget="Dia3ColegioExt1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" />
+        <condition>
+          <equals var="habladomama" value="2" />
+        </condition>
+      </exit>
+    </exits>
+    <characters>
+      <character-ref idTarget="Madre" x="430" y="1095" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="Dia3ColegioExt1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/colegioExt.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="768" />
+    <characters>
+      <character-ref idTarget="Pibe1" x="1394" y="847" scale="0.5705635" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe2" x="1653" y="845" scale="0.5266771" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe3" x="1907" y="841" scale="0.5188682" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="Dia3ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/colegioExt.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="768" />
+    <exits>
+      <exit rectangular="yes" x="1898" y="-28" width="164" height="1080" hasInfluenceArea="no" idTarget="Dia3CasaAbuela1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" />
+        <condition>
+          <equals var="habladogrupo" value="2" />
+        </condition>
+      </exit>
+    </exits>
+    <characters>
+      <character-ref idTarget="Pibe1" x="1373" y="805" scale="0.505152" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe2" x="1591" y="811" scale="0.468436" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe3" x="1784" y="812" scale="0.4822855" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia3CasaAbuela1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
@@ -684,6 +931,156 @@
         <point x="1619" y="629" />
       </exit>
     </exits>
+    <characters>
+      <character-ref idTarget="Abuela" x="453" y="766" scale="0.8063967" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="Dia3CasaAbuela2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.241667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/salon.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="558" />
+    <active-areas>
+      <active-area id="ActiveAreaId3" rectangular="yes" x="-33" y="-16" width="2096" height="780" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="Dia3PostWhatsApp" guid="eeb087f6-4abf-42af-a1ab-416b2ca9bf64" />
+              <condition />
+              <trigger-cutscene idTarget="PostComer" guid="4cef4dec-7df3-4712-b0aa-cd29ab1f5d6d" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
+  </scene>
+  <scene id="Dia3CasaAbuela3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.241667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/salon.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="558" />
+    <active-areas>
+      <active-area id="ActiveAreaId4" rectangular="yes" x="-16" y="-26" width="2085" height="805" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="Dia3DespuesDeComer" guid="bac3d178-dd56-4539-ba9c-b37d35d9b8fa" />
+              <condition />
+              <trigger-scene idTarget="Dia3Habitacion2" x="1024" y="864" transitionTime="0" transitionType="0" guid="2e203523-a358-4037-9e39-8ae75a0df9db" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
+  </scene>
+  <scene id="Dia3Habitacion2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+  </scene>
+  <scene id="Dia4ColegioExt1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/colegioExt.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="768" />
+  </scene>
+  <scene id="Dia4Clase1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/clase2.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="768" />
+  </scene>
+  <scene id="Dia4ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/colegioExt.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="768" />
+  </scene>
+  <scene id="Dia4Habitacion1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+  </scene>
+  <scene id="Dia4Habitacion2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+  </scene>
+  <scene id="Dia4Habitacion3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+  </scene>
+  <scene id="MDFinal" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/habitacion.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+    <characters>
+      <character-ref idTarget="Madre" x="604" y="1101" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
   </scene>
   <graph-conversation id="PrimeraManana">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
@@ -2357,6 +2754,51 @@
     </effect>
     <resources name="No name">
       <asset type="slides" uri="assets/animation/dianext.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="Nextday2" start="no" idTarget="Dia3Habitacion1" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/dianext.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="Postclass" start="no" idTarget="Dia3ColegioExt2" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/postclasse.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="PostComer" start="no" idTarget="Dia3CasaAbuela3" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/comer.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="Postrule" start="no" next="go-back" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/poswheel.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="PostGame" start="no" next="go-back" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/despuesjuego.eaa.xml" />
     </resources>
     <name>
     </name>
