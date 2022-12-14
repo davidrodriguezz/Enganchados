@@ -65,7 +65,7 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: PrimeraManana</documentation>
         <condition>
-          <equals var="habladoabu" value="0" />
+          <less-than var="habladoabu" value="1" />
         </condition>
         <effect>
           <trigger-conversation idTarget="PrimeraManana" guid="0507cb16-fd0e-4cd0-8b01-18c2f3dc93f8" />
@@ -77,7 +77,7 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: Dia3CasaAbuela</documentation>
         <condition>
-          <equals var="habladoabu" value="1" />
+          <less-than var="habladoabu" value="2" />
         </condition>
         <effect>
           <trigger-conversation idTarget="Dia3CasaAbuela" guid="529bdcf9-3975-4664-9a5a-42687e208e70" />
@@ -121,7 +121,7 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="habladomama" value="0" />
+          <less-than var="habladomama" value="1" />
         </condition>
         <effect>
           <trigger-conversation idTarget="Dia2PedirDinero" guid="c68c06ab-dda3-47d3-9a4c-8528cdb46ce8" />
@@ -134,7 +134,7 @@
       </talk-to>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="habladomama" value="1" />
+          <less-than var="habladomama" value="2" />
         </condition>
         <effect>
           <trigger-conversation idTarget="Dia3Habitacion" guid="33a6ff8d-a39b-4d4a-b6b7-bfe5dfde1d76" />
@@ -142,6 +142,14 @@
           <increment var="habladomama" value="1" guid="ee619062-67cd-4441-8f9f-87ab9819cf95" />
           <condition />
           <move-npc idTarget="Madre" x="-430" y="1087" guid="da1fd5df-ea6d-45e4-9033-ec9da7d65339" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="MesesDespues" guid="68dd4337-0430-4c76-b713-a237c8f62e20" />
+          <condition />
+          <trigger-scene idTarget="Dia1Habitacion" x="1024" y="864" transitionTime="0" transitionType="0" guid="1cb842bf-7d5e-496c-af01-beb16a54526f" />
           <condition />
         </effect>
       </talk-to>
@@ -181,7 +189,7 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: ProfesoraAvisoExamenes</documentation>
         <condition>
-          <equals var="TicherTokin" value="0" />
+          <less-than var="TicherTokin" value="1" />
         </condition>
         <effect>
           <trigger-conversation idTarget="ProfesoraAvisoExamenes" guid="f3e5ff7d-c5da-4bcf-a656-8c502887f765" />
@@ -191,10 +199,25 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: Dia2Profe</documentation>
         <condition>
-          <equals var="TicherTokin" value="1" />
+          <less-than var="TicherTokin" value="2" />
         </condition>
         <effect>
           <trigger-conversation idTarget="Dia2Profe" guid="94697296-b4f9-4f2a-bf7b-cd14aa659ea6" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <less-than var="TicherTokin" value="3" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia4NotaExamen" guid="a3498b80-ab64-4423-8e22-d9d1672646ba" />
+          <condition />
+          <trigger-scene idTarget="Dia4ColegioExt2" x="1024" y="768" transitionTime="0" transitionType="0" guid="813057b2-3f97-4f8c-a0cf-df78b9c3074b" />
+          <condition />
+          <trigger-conversation idTarget="Dia4Ext4" guid="b6b1a95b-816e-4136-a0af-2f4d79beeb45" />
+          <condition />
+          <trigger-scene idTarget="Dia4Habitacion1" x="1024" y="864" transitionTime="0" transitionType="0" guid="975d44f8-f4d0-4a71-8f8c-23759a5d9666" />
           <condition />
         </effect>
       </talk-to>
@@ -233,7 +256,7 @@
     <actions>
       <talk-to needsGoTo="no" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="hablado" value="0" />
+          <less-than var="hablado" value="1" />
         </condition>
         <effect>
           <trigger-conversation idTarget="SaludoColegio" guid="57d4e54b-d877-43c9-a06a-91f1e97db479" />
@@ -242,7 +265,7 @@
       </talk-to>
       <talk-to needsGoTo="no" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="hablado" value="1" />
+          <less-than var="hablado" value="2" />
         </condition>
         <effect>
           <trigger-conversation idTarget="IntroCajas" guid="f5ec29ee-11c4-487b-b4db-9e2606dc445c" />
@@ -252,7 +275,7 @@
       <talk-to needsGoTo="no" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: Dia2ColeExt</documentation>
         <condition>
-          <equals var="hablado" value="2" />
+          <less-than var="hablado" value="3" />
         </condition>
         <effect>
           <trigger-conversation idTarget="Dia2ColeExt" guid="2d184770-1dd8-4b03-a6bf-c28030d2494b" />
@@ -262,7 +285,7 @@
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: Dia3ColegioExt</documentation>
         <condition>
-          <equals var="habladogrupo" value="0" />
+          <less-than var="habladogrupo" value="1" />
         </condition>
         <effect>
           <trigger-conversation idTarget="Dia3ColegioExt" guid="511dddc5-07f6-4bd9-b374-1af123bf2996" />
@@ -290,6 +313,12 @@
           <trigger-conversation idTarget="Dia3SalirColegio" guid="2afa34f9-b4d5-4c45-827f-ec258acf0356" />
           <condition />
           <increment var="habladogrupo" value="1" guid="e6971eb6-80e5-4b00-9455-73201c7033bc" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="Dia4Ext2" guid="88d562ee-0ba6-4997-ab79-add95cfd4d82" />
           <condition />
         </effect>
       </talk-to>
@@ -329,7 +358,7 @@
       <talk-to needsGoTo="no" keepDistance="35" not-effects="no">
         <documentation>Created with target conversation: DespuesClase</documentation>
         <condition>
-          <equals var="habladopibe2" value="0" />
+          <less-than var="habladopibe2" value="1" />
         </condition>
         <effect>
           <trigger-conversation idTarget="DespuesClase" guid="a95ca03d-ed93-467c-8f6e-d2fc9a90659a" />
@@ -370,6 +399,12 @@
           <trigger-conversation idTarget="Dia3SalirColegio" guid="dc1193dc-3bc1-4961-8d7e-2672edb4700c" />
           <condition />
           <increment var="habladogrupo" value="1" guid="1a1eb13a-a094-432f-a567-0413b36cf3b7" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="Dia4Ext" guid="949539be-4ab4-4f3c-9e29-eec1f5ea51d2" />
           <condition />
         </effect>
       </talk-to>
@@ -430,9 +465,15 @@
           <condition />
         </effect>
       </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="Dia4Ext3" guid="0b306cac-2967-4fc7-a319-ddec102d79b5" />
+          <condition />
+        </effect>
+      </talk-to>
     </actions>
   </character>
-  <scene id="Dia1Habitacion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
+  <scene id="Dia1Habitacion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -475,7 +516,7 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Pibe1" x="1560" y="970" scale="0.787311" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe1" x="1552" y="974" scale="0.787311" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia1Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="0.6733333" class="accesible" type="area">
@@ -504,11 +545,14 @@
       <exit rectangular="yes" x="85" y="397" width="100" height="151" hasInfluenceArea="no" idTarget="Dia1ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
-          <equals var="hablado" value="2" />
+          <less-than var="hablado" value="3" />
         </condition>
       </exit>
       <exit rectangular="yes" x="1934" y="398" width="63" height="172" hasInfluenceArea="no" idTarget="Dia1ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <less-than var="hablado" value="3" />
+        </condition>
       </exit>
     </exits>
     <characters>
@@ -779,7 +823,7 @@
       </active-area>
     </active-areas>
   </scene>
-  <scene id="Dia3Habitacion1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+  <scene id="Dia3Habitacion1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -814,9 +858,9 @@
     </name>
     <default-initial-position x="1024" y="768" />
     <characters>
-      <character-ref idTarget="Pibe1" x="1394" y="847" scale="0.5705635" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe2" x="1653" y="845" scale="0.5266771" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe3" x="1907" y="841" scale="0.5188682" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe1" x="1308" y="835" scale="0.4637937" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe2" x="1517" y="827" scale="0.4432168" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe3" x="1735" y="840" scale="0.5119089" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia3ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
@@ -831,15 +875,12 @@
     <exits>
       <exit rectangular="yes" x="1898" y="-28" width="164" height="1080" hasInfluenceArea="no" idTarget="Dia3CasaAbuela1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
-        <condition>
-          <equals var="habladogrupo" value="2" />
-        </condition>
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Pibe1" x="1373" y="805" scale="0.505152" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe2" x="1591" y="811" scale="0.468436" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe3" x="1784" y="812" scale="0.4822855" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe1" x="1297" y="813" scale="0.505152" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe2" x="1531" y="815" scale="0.468436" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe3" x="1732" y="812" scale="0.4822855" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia3CasaAbuela1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
@@ -861,7 +902,7 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Abuela" x="453" y="766" scale="0.8063967" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Abuela" x="587" y="763" scale="0.6644846" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia3CasaAbuela2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.241667" class="accesible" type="area">
@@ -920,7 +961,7 @@
             <effect>
               <trigger-conversation idTarget="Dia3DespuesDeComer" guid="bac3d178-dd56-4539-ba9c-b37d35d9b8fa" />
               <condition />
-              <trigger-scene idTarget="Dia3Habitacion2" x="1024" y="864" transitionTime="0" transitionType="0" guid="2e203523-a358-4037-9e39-8ae75a0df9db" />
+              <trigger-scene idTarget="MinijuegoRuleta3" x="1024" y="864" transitionTime="0" transitionType="0" guid="2e203523-a358-4037-9e39-8ae75a0df9db" />
               <condition />
             </effect>
           </examine>
@@ -937,6 +978,26 @@
     <name>
     </name>
     <default-initial-position x="1024" y="864" />
+    <active-areas>
+      <active-area id="ActiveAreaId6" rectangular="yes" x="-86" y="-30" width="2189" height="1216" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="Dia3PostApertura" guid="0d1449aa-e937-4843-b0a6-8182c8b4820e" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
   </scene>
   <scene id="Dia4ColegioExt1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
     <documentation>
@@ -947,6 +1008,16 @@
     <name>
     </name>
     <default-initial-position x="1024" y="768" />
+    <exits>
+      <exit rectangular="yes" x="918" y="469" width="280" height="236" hasInfluenceArea="no" idTarget="Dia4Clase1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
+    <characters>
+      <character-ref idTarget="Pibe1" x="310" y="875" scale="0.6066545" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe2" x="575" y="756" scale="0.4104926" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe3" x="1745" y="830" scale="0.5496453" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+    </characters>
   </scene>
   <scene id="Dia4Clase1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
     <documentation>
@@ -957,6 +1028,9 @@
     <name>
     </name>
     <default-initial-position x="1024" y="768" />
+    <characters>
+      <character-ref idTarget="Profesora" x="428" y="936" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
   </scene>
   <scene id="Dia4ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
     <documentation>
@@ -997,6 +1071,26 @@
     <name>
     </name>
     <default-initial-position x="1024" y="864" />
+    <active-areas>
+      <active-area id="ActiveAreaId5" rectangular="yes" x="-67" y="-27" width="2166" height="1220" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="Dia4PidiendoDinero" guid="4ad2c2b8-221f-4068-966b-7711dce6efdd" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
   </scene>
   <scene id="MDFinal" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
     <documentation>
@@ -1010,6 +1104,36 @@
     <characters>
       <character-ref idTarget="Madre" x="604" y="1101" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
+  </scene>
+  <scene id="MovilCasaAbuela" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/movilCasaAbuela.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="864" />
+    <active-areas>
+      <active-area id="Botn" rectangular="yes" x="992" y="532" width="137" height="142" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <examine needsGoTo="no" keepDistance="0" not-effects="no">
+            <effect>
+              <trigger-cutscene idTarget="Chat" guid="00efe698-a254-4501-922b-04c798ba1045" />
+              <condition />
+            </effect>
+          </examine>
+        </actions>
+      </active-area>
+    </active-areas>
   </scene>
   <graph-conversation id="PrimeraManana">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
@@ -2151,7 +2275,12 @@
         <text>#! **Beep, Beep** </text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="MovilCasaAbuela" x="1024" y="864" transitionTime="0" transitionType="0" guid="bf3bdcd2-477d-4651-9ab8-a4bd886a8fdd" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="655" editor-y="216">
       <speak-char idTarget="Abuela">
@@ -2164,7 +2293,12 @@
         <text>#! **Beep, Beep** </text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="MovilCasaAbuela" x="1024" y="864" transitionTime="0" transitionType="0" guid="f233f18c-7fb7-4b14-9d11-f74d4e1c40c8" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia3PostWhatsApp">
@@ -2281,7 +2415,12 @@
         <text>Ya sé, le pediré ayuda a mis amigos de clase. Ellos no me fallarán.</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="Dia4ColegioExt1" x="1024" y="768" transitionTime="0" transitionType="0" guid="a5928afd-1a2a-42db-a683-879fc97b93d5" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia4Ext">
@@ -2577,7 +2716,12 @@
         <text>Recibes +50 créditos.</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <trigger-cutscene idTarget="PostComer" guid="a748f01e-ef42-42a1-bbfa-8dce001e7e4f" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="MesesDespues">
@@ -2690,6 +2834,7 @@
   <unity-scene id="KillZomb2" scene="Assets/Scenes/KillZomb2.unity" />
   <unity-scene id="MobileMiniJuego2" scene="Assets/Scenes/MobileMiniJuego2.unity" />
   <unity-scene id="KillZomb3" scene="Assets/Scenes/KillZomb3.unity" />
+  <unity-scene id="MinijuegoRuleta3" scene="Assets/Scenes/RuletaMinigame3.unity" />
   <slidescene id="Nextday" start="no" idTarget="Dia2Habitacion1" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
@@ -2748,6 +2893,24 @@
     </documentation>
     <resources name="No name">
       <asset type="slides" uri="assets/animation/despuesjuego.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="Nextday3" start="no" idTarget="MDFinal" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/dianext.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="Chat" start="no" idTarget="Dia3CasaAbuela2" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/chateoqueteveo.eaa.xml" />
     </resources>
     <name>
     </name>
