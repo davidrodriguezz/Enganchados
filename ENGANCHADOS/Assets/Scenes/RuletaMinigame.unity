@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 23104601}
   - component: {fileID: 23104603}
   - component: {fileID: 23104602}
+  - component: {fileID: 23104604}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -199,6 +200,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23104600}
   m_CullTransparentMesh: 0
+--- !u!114 &23104604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23104600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab9bb3b1d0062440a4e7dadda3561b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monedas: 0
 --- !u!224 &71249562 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224511889338460380, guid: 160be82451391f6448834ec65286e007,
@@ -1502,8 +1516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9fe87f5a7928548af0ca66c10df9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monedas: 5
-  textMonedas: {fileID: 23104602}
 --- !u!4 &1675583869
 Transform:
   m_ObjectHideFlags: 0

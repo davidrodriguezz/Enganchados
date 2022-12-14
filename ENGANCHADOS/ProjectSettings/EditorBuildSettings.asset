@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MobileMiniJuego2.unity
     guid: 7cfc8439ae9d1054bb6ffa6f2cb07235
+  - enabled: 1
+    path: Assets/Scenes/KillZomb3.unity
+    guid: 2c9a5acc50f3add4a82b145140a44658
   m_configObjects: {}

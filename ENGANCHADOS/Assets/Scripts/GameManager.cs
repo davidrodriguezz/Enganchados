@@ -6,9 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public int monedas = 5;
-    [SerializeField]
-    private Text textMonedas;
+    private int monedas = 5;
 
     void Awake() //  Comprobar que solo hay un GameManager.
     {
@@ -19,19 +17,17 @@ public class GameManager : MonoBehaviour
         }
         else Destroy(this.gameObject);
 
-        textMonedas.text = monedas.ToString();
+        //textMonedas.text = monedas.ToString();
     }
 
     public void addMonedas(int a)
     {
         monedas += a;
-        textMonedas.text = monedas.ToString();
     }
 
     public void substractMonedas(int a)
     {
         monedas -= a;
-        textMonedas.text = monedas.ToString();
     }
 
     public int getMonedas() { return monedas; }

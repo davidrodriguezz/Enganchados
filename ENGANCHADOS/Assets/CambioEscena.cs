@@ -69,4 +69,15 @@ public class CambioEscena : MonoBehaviour
 
 
     }
+    public void CambiaaDia2Habitacion3()
+    {
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("Dia2Habitacion3", 0, 0) }));
+
+    }
+    public void CambiaaDia2Habitacion4()
+    {
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("Dia2Habitacion4", 0, 0) }));
+
+    }
+
 }
