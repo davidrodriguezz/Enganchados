@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<animation id="Abuelita.eaa.xml" usetransitions="yes" slides="no">
+<animation id="semdes.eaa.xml" usetransitions="yes" slides="no">
   <documentation />
   <transition type="0" time="0" />
-  <frame uri="assets/animation/abuela.png" type="image" time="40" waitforclick="no" soundUri="" maxSoundTime="1000">
+  <frame uri="assets/animation/monthlater.png" type="image" time="40" waitforclick="no" soundUri="" maxSoundTime="1000">
     <documentation>
     </documentation>
   </frame>

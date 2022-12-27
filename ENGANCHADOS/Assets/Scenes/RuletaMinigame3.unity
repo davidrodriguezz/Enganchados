@@ -859,7 +859,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 916192962}
-        m_MethodName: CambiaaDia2Habitacion4
+        m_MethodName: CambiaADia3Habitacion2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

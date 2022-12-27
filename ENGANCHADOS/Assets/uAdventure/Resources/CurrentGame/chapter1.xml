@@ -31,7 +31,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </player>
-  <character id="Abuela" behaviour="normal">
+  <character id="Abuela1" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/awela.eaa.xml" />
       <asset type="standdown" uri="assets/animation/awela.eaa.xml" />
@@ -74,21 +74,48 @@
           <condition />
         </effect>
       </talk-to>
+    </actions>
+  </character>
+  <character id="Abuela2" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/awela.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/awela.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: Dia3CasaAbuela</documentation>
-        <condition>
-          <less-than var="habladoabu" value="2" />
-        </condition>
         <effect>
-          <trigger-conversation idTarget="Dia3CasaAbuela" guid="529bdcf9-3975-4664-9a5a-42687e208e70" />
-          <condition />
-          <increment var="habladoabu" value="1" guid="c19b7edb-bd63-4bb5-8743-809a4242f270" />
+          <trigger-conversation idTarget="Dia3CasaAbuela" guid="ac39c200-6b67-4c1c-bdac-43abf0c6c000" />
           <condition />
         </effect>
       </talk-to>
     </actions>
   </character>
-  <character id="Madre" behaviour="normal">
+  <character id="Madre1" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/mami.eaa.xml" />
       <asset type="standdown" uri="assets/animation/mami.eaa.xml" />
@@ -126,36 +153,135 @@
         <effect>
           <trigger-conversation idTarget="Dia2PedirDinero" guid="c68c06ab-dda3-47d3-9a4c-8528cdb46ce8" />
           <condition />
-          <increment var="habladomama" value="1" guid="0bdda43d-9f0e-48a6-90f7-e2856460788c" />
-          <condition />
           <trigger-scene idTarget="KillZomb3" x="1024" y="864" transitionTime="0" transitionType="0" guid="f40c0160-4e45-43c7-884f-2d2586ed0eac" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <condition>
-          <less-than var="habladomama" value="2" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="Dia3Habitacion" guid="33a6ff8d-a39b-4d4a-b6b7-bfe5dfde1d76" />
-          <condition />
-          <increment var="habladomama" value="1" guid="ee619062-67cd-4441-8f9f-87ab9819cf95" />
-          <condition />
-          <move-npc idTarget="Madre" x="-430" y="1087" guid="da1fd5df-ea6d-45e4-9033-ec9da7d65339" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <effect>
-          <trigger-conversation idTarget="MesesDespues" guid="68dd4337-0430-4c76-b713-a237c8f62e20" />
-          <condition />
-          <trigger-scene idTarget="Dia1Habitacion" x="1024" y="864" transitionTime="0" transitionType="0" guid="1cb842bf-7d5e-496c-af01-beb16a54526f" />
           <condition />
         </effect>
       </talk-to>
     </actions>
   </character>
-  <character id="Profesora" behaviour="normal">
+  <character id="Madre2" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/mami.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/mami.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="Dia3Habitacion" guid="9f26cf53-3344-4174-8dce-c8a0ff86873b" />
+          <condition />
+          <move-npc idTarget="Madre2" x="-600" y="1100" guid="f57d3662-49bb-43ce-9f4e-a01f937c2208" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Madre3" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/mami.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/mami.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="MesesDespues" guid="99db83ff-dd57-46f3-bb10-f6fadbf6c948" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Madre4" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/mami.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/mami.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladomama" value="2" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia4Casa" guid="a0a7a9e7-2530-4162-a349-3bea88dcb422" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Profesora1" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/ticher.eaa.xml" />
       <asset type="standdown" uri="assets/animation/ticher.eaa.xml" />
@@ -196,34 +322,93 @@
           <condition />
         </effect>
       </talk-to>
+    </actions>
+  </character>
+  <character id="Profesora2" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/ticher.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/ticher.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: Dia2Profe</documentation>
         <condition>
-          <less-than var="TicherTokin" value="2" />
+          <equals var="TicherTokin" value="1" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="Dia2Profe" guid="94697296-b4f9-4f2a-bf7b-cd14aa659ea6" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <condition>
-          <less-than var="TicherTokin" value="3" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="Dia4NotaExamen" guid="a3498b80-ab64-4423-8e22-d9d1672646ba" />
-          <condition />
-          <trigger-scene idTarget="Dia4ColegioExt2" x="1024" y="768" transitionTime="0" transitionType="0" guid="813057b2-3f97-4f8c-a0cf-df78b9c3074b" />
-          <condition />
-          <trigger-conversation idTarget="Dia4Ext4" guid="b6b1a95b-816e-4136-a0af-2f4d79beeb45" />
-          <condition />
-          <trigger-scene idTarget="Dia4Habitacion1" x="1024" y="864" transitionTime="0" transitionType="0" guid="975d44f8-f4d0-4a71-8f8c-23759a5d9666" />
+          <trigger-conversation idTarget="Dia2Profe" guid="d5d8762a-8710-42ef-bba1-1360b10459e2" />
           <condition />
         </effect>
       </talk-to>
     </actions>
   </character>
-  <character id="Pibe1" behaviour="normal">
+  <character id="Profesora3" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/ticher.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/ticher.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="TicherTokin" value="1" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia4NotaExamen" guid="1e664faf-4fed-495a-bd78-b427ec6a6cee" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Pibe11" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/chico1.eaa.xml" />
       <asset type="standdown" uri="assets/animation/chico1.eaa.xml" />
@@ -263,68 +448,166 @@
           <condition />
         </effect>
       </talk-to>
-      <talk-to needsGoTo="no" keepDistance="35" not-effects="no">
-        <condition>
-          <less-than var="hablado" value="2" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="IntroCajas" guid="f5ec29ee-11c4-487b-b4db-9e2606dc445c" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="no" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: Dia2ColeExt</documentation>
-        <condition>
-          <less-than var="hablado" value="3" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="Dia2ColeExt" guid="2d184770-1dd8-4b03-a6bf-c28030d2494b" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: Dia3ColegioExt</documentation>
-        <condition>
-          <less-than var="habladogrupo" value="1" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="Dia3ColegioExt" guid="511dddc5-07f6-4bd9-b374-1af123bf2996" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <condition>
-          <equals var="habladogrupo" value="0" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="Dia3ColegioExt" guid="91fd231b-6a34-4e88-a548-200917d6661b" />
-          <condition />
-          <increment var="habladogrupo" value="1" guid="04f90b11-a980-4e26-afc6-6e51dd93619d" />
-          <condition />
-          <trigger-cutscene idTarget="Postclass" guid="b4d4b6c3-31c3-440c-adb6-22afff77250e" />
-          <condition />
-        </effect>
-      </talk-to>
+    </actions>
+  </character>
+  <character id="Pibe12" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="habladogrupo" value="1" />
+          <equals var="hablado" value="1" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="Dia3SalirColegio" guid="2afa34f9-b4d5-4c45-827f-ec258acf0356" />
-          <condition />
-          <increment var="habladogrupo" value="1" guid="e6971eb6-80e5-4b00-9455-73201c7033bc" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <effect>
-          <trigger-conversation idTarget="Dia4Ext2" guid="88d562ee-0ba6-4997-ab79-add95cfd4d82" />
+          <trigger-conversation idTarget="IntroCajas" guid="47b64e7c-8f41-45af-83fc-89de77df73e9" />
           <condition />
         </effect>
       </talk-to>
     </actions>
   </character>
-  <character id="Pibe2" behaviour="normal">
+  <character id="Pibe13" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="hablado" value="2" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia2ColeExt" guid="42871dd8-bd15-4a73-8bbd-f971cae18421" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Pibe14" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="hablado" value="3" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia4Ext" guid="88d51506-646f-472b-acc4-11999aef3ddf" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Pibe15" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/chico1.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="Pibe21" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/Pibinho2.eaa.xml" />
       <asset type="standdown" uri="assets/animation/Pibinho2.eaa.xml" />
@@ -365,52 +648,124 @@
           <condition />
         </effect>
       </talk-to>
-      <talk-to needsGoTo="no" keepDistance="35" not-effects="no">
-        <documentation>Created with target conversation: Dia2Quedar</documentation>
-        <condition>
-          <equals var="habladopibe2" value="1" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="Dia2Quedar" guid="0f5677c1-2725-446e-a40e-b149cfb90aa2" />
-          <condition />
-        </effect>
-      </talk-to>
+    </actions>
+  </character>
+  <character id="Pibe22" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <either>
-            <equals var="habladogrupo" value="0" />
-            <equals var="habladopibe2" value="2" />
-          </either>
+          <equals var="habladopibe2" value="2" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="Dia3ColegioExt" guid="3bebea0b-5e92-48da-822f-094992901193" />
-          <condition />
-          <trigger-cutscene idTarget="Postclass" guid="dafd6527-e241-4c24-9c84-14eaaa190acf" />
-          <condition />
-          <increment var="habladogrupo" value="1" guid="8bc5143b-516c-4dbd-bc62-4e99c719b2ef" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <condition>
-          <equals var="habladogrupo" value="1" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="Dia3SalirColegio" guid="dc1193dc-3bc1-4961-8d7e-2672edb4700c" />
-          <condition />
-          <increment var="habladogrupo" value="1" guid="1a1eb13a-a094-432f-a567-0413b36cf3b7" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <effect>
-          <trigger-conversation idTarget="Dia4Ext" guid="949539be-4ab4-4f3c-9e29-eec1f5ea51d2" />
+          <trigger-conversation idTarget="Dia2Quedar" guid="3bb50872-523a-4970-ba5a-1bc9625e1ab7" />
           <condition />
         </effect>
       </talk-to>
     </actions>
   </character>
-  <character id="Pibe3" behaviour="normal">
+  <character id="Pibe23" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <equals var="habladopibe2" value="3" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="Dia4Ext2" guid="ce87d7cf-fc62-455d-994f-2e1f0fee8719" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Pibe24" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/Pibinho2.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="Pibe31" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/animation/pib3.eaa.xml" />
       <asset type="standdown" uri="assets/animation/pib3.eaa.xml" />
@@ -443,35 +798,45 @@
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <condition>
-          <equals var="habladogrupo" value="0" />
+          <equals var="habladopibe3" value="0" />
         </condition>
-        <effect>
-          <trigger-conversation idTarget="Dia3ColegioExt" guid="227c28a0-9b49-4a80-838d-ed7ffe5db7fc" />
-          <condition />
-          <trigger-cutscene idTarget="Postclass" guid="037d52a7-634e-4c8a-9923-1b0d17044af6" />
-          <condition />
-          <increment var="habladogrupo" value="1" guid="fd634696-cd08-41a0-9ffa-82e31aa743d5" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
-        <condition>
-          <equals var="habladogrupo" value="2" />
-        </condition>
-        <effect>
-          <trigger-conversation idTarget="Dia3SalirColegio" guid="25a446bd-528f-403d-8051-07a364569460" />
-          <condition />
-          <increment var="habladogrupo" value="1" guid="18417468-442d-451a-869f-1f918c9ca471" />
-          <condition />
-        </effect>
-      </talk-to>
-      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
         <effect>
           <trigger-conversation idTarget="Dia4Ext3" guid="0b306cac-2967-4fc7-a319-ddec102d79b5" />
           <condition />
         </effect>
       </talk-to>
     </actions>
+  </character>
+  <character id="Pibe32" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/animation/pib3.eaa.xml" />
+      <asset type="standdown" uri="assets/animation/pib3.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
   </character>
   <scene id="Dia1Habitacion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -491,7 +856,7 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Abuela" x="350" y="1112" scale="0.9865363" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Abuela1" x="350" y="1112" scale="0.9865363" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia1ColegioExt" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
@@ -516,7 +881,7 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Pibe1" x="1552" y="974" scale="0.787311" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe11" x="1552" y="974" scale="0.787311" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia1Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="0.6733333" class="accesible" type="area">
@@ -529,7 +894,7 @@
     </name>
     <default-initial-position x="359" y="303" />
     <characters>
-      <character-ref idTarget="Profesora" x="790" y="941" scale="0.9827529" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Profesora1" x="790" y="941" scale="0.9827529" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia1Gym" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
@@ -542,21 +907,21 @@
     </name>
     <default-initial-position x="400" y="450" />
     <exits>
-      <exit rectangular="yes" x="85" y="397" width="100" height="151" hasInfluenceArea="no" idTarget="Dia1ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="85" y="393" width="100" height="151" hasInfluenceArea="no" idTarget="Dia1ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
-          <less-than var="hablado" value="3" />
+          <equals var="hablado" value="2" />
         </condition>
       </exit>
-      <exit rectangular="yes" x="1934" y="398" width="63" height="172" hasInfluenceArea="no" idTarget="Dia1ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="1938" y="398" width="63" height="172" hasInfluenceArea="no" idTarget="Dia1ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
-          <less-than var="hablado" value="3" />
+          <equals var="hablado" value="2" />
         </condition>
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Pibe1" x="726" y="607" scale="0.3195288" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe12" x="646" y="585" scale="0.3694405" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia1ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
@@ -581,7 +946,7 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Pibe2" x="1652" y="936" scale="0.6341843" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe21" x="1652" y="936" scale="0.6341843" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia1Habitacion2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
@@ -685,7 +1050,7 @@
     </name>
     <default-initial-position x="1024" y="768" />
     <characters>
-      <character-ref idTarget="Pibe1" x="345" y="836" scale="0.5351604" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe13" x="358" y="831" scale="0.5283889" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia2Clase" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
@@ -697,24 +1062,8 @@
     <name>
     </name>
     <default-initial-position x="1024" y="768" />
-    <exits>
-      <exit rectangular="no" x="598" y="272" width="909" height="406" hasInfluenceArea="no" idTarget="Dia2Examen" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" cursor-path="" sound-path="" />
-        <point x="598" y="272" />
-        <point x="1507" y="275" />
-        <point x="1468" y="667" />
-        <point x="641" y="678" />
-        <condition>
-          <equals var="TicherTokin" value="2" />
-        </condition>
-        <post-effect>
-          <trigger-conversation idTarget="Dia2Ex" guid="43c2e6e6-b1c9-4a21-a950-9dd8a281fe70" />
-          <condition />
-        </post-effect>
-      </exit>
-    </exits>
     <characters>
-      <character-ref idTarget="Profesora" x="398" y="957" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Profesora2" x="372" y="951" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia2Examen" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.8" class="accesible" type="area">
@@ -740,12 +1089,12 @@
       <exit rectangular="yes" x="-9" y="-19" width="165" height="1085" hasInfluenceArea="no" idTarget="Dia2Habitacion2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
         <condition>
-          <equals var="habladopibe2" value="2" />
+          <equals var="habladopibe2" value="3" />
         </condition>
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Pibe2" x="739" y="875" scale="0.6032107" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe22" x="1515" y="850" scale="0.5637796" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia2Habitacion2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
@@ -758,7 +1107,7 @@
     </name>
     <default-initial-position x="1024" y="864" />
     <characters>
-      <character-ref idTarget="Madre" x="1694" y="1075" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Madre1" x="1647" y="1058" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia2Habitacion3" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
@@ -833,11 +1182,8 @@
     </name>
     <default-initial-position x="1024" y="864" />
     <exits>
-      <exit rectangular="yes" x="-54" y="-42" width="177" height="1243" hasInfluenceArea="no" idTarget="Dia3ColegioExt1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+      <exit rectangular="yes" x="-50" y="-38" width="177" height="1243" hasInfluenceArea="no" idTarget="Dia3ColegioExt1" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
         <exit-look text="" cursor-path="" sound-path="" />
-        <condition>
-          <equals var="habladomama" value="2" />
-        </condition>
         <post-effect>
           <trigger-conversation idTarget="Dia3ColegioExt" guid="ab23f0fc-3e32-4edd-be9e-9ab212c1d0f2" />
           <condition />
@@ -845,7 +1191,7 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Madre" x="430" y="1095" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Madre2" x="495" y="1112" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia3ColegioExt1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
@@ -858,9 +1204,9 @@
     </name>
     <default-initial-position x="1024" y="768" />
     <characters>
-      <character-ref idTarget="Pibe1" x="1308" y="835" scale="0.4637937" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe2" x="1517" y="827" scale="0.4432168" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe3" x="1735" y="840" scale="0.5119089" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe15" x="1304" y="829" scale="0.482987" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe24" x="1512" y="820" scale="0.4613061" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe32" x="1730" y="834" scale="0.4897634" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia3ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
@@ -878,9 +1224,9 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Pibe1" x="1297" y="813" scale="0.505152" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe2" x="1531" y="815" scale="0.468436" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe3" x="1732" y="812" scale="0.4822855" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe15" x="1330" y="822" scale="0.4709035" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe24" x="1527" y="828" scale="0.4818601" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe32" x="1720" y="825" scale="0.4885901" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia3CasaAbuela1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
@@ -902,7 +1248,7 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Abuela" x="587" y="763" scale="0.6644846" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Abuela2" x="565" y="766" scale="0.7517161" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia3CasaAbuela2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.241667" class="accesible" type="area">
@@ -979,7 +1325,7 @@
     </name>
     <default-initial-position x="1024" y="864" />
     <active-areas>
-      <active-area id="ActiveAreaId6" rectangular="yes" x="-86" y="-30" width="2189" height="1216" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="ActiveAreaId6" rectangular="yes" x="-82" y="-30" width="2189" height="1216" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -1014,9 +1360,9 @@
       </exit>
     </exits>
     <characters>
-      <character-ref idTarget="Pibe1" x="310" y="875" scale="0.6066545" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe2" x="575" y="756" scale="0.4104926" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
-      <character-ref idTarget="Pibe3" x="1745" y="830" scale="0.5496453" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe31" x="1745" y="830" scale="0.5496453" orientation="2" glow="no" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe14" x="313" y="908" scale="0.6430017" orientation="2" glow="no" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Pibe23" x="602" y="765" scale="0.4296274" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia4Clase1" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
@@ -1028,8 +1374,23 @@
     <name>
     </name>
     <default-initial-position x="1024" y="768" />
+    <exits>
+      <exit rectangular="no" x="1950" y="136" width="106" height="781" hasInfluenceArea="no" idTarget="Dia4ColegioExt2" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+        <point x="1950" y="152" />
+        <point x="2052" y="136" />
+        <point x="2056" y="917" />
+        <point x="1950" y="874" />
+        <post-effect>
+          <trigger-conversation idTarget="Dia4Ext4" guid="40eea1e0-8b6f-461b-857b-8fa1c001a5b7" />
+          <condition />
+          <trigger-scene idTarget="Dia4Habitacion1" x="1024" y="864" transitionTime="0" transitionType="0" guid="7b07e08c-9066-4484-a1b7-d4230a9411c5" />
+          <condition />
+        </post-effect>
+      </exit>
+    </exits>
     <characters>
-      <character-ref idTarget="Profesora" x="428" y="936" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Profesora3" x="508" y="952" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Dia4ColegioExt2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
@@ -1051,6 +1412,9 @@
     <name>
     </name>
     <default-initial-position x="1024" y="864" />
+    <characters>
+      <character-ref idTarget="Madre4" x="437" y="1105" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+    </characters>
   </scene>
   <scene id="Dia4Habitacion2" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
     <documentation>
@@ -1102,7 +1466,7 @@
     </name>
     <default-initial-position x="1024" y="864" />
     <characters>
-      <character-ref idTarget="Madre" x="604" y="1101" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Madre3" x="525" y="1073" scale="1" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="MovilCasaAbuela" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1.92" class="accesible" type="area">
@@ -1137,7 +1501,7 @@
   </scene>
   <graph-conversation id="PrimeraManana">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Abuela">
+      <speak-char idTarget="Abuela1">
         <resources name="No name" />
         <text>Buenos días mi niño, despierta que tienes clase.</text>
       </speak-char>
@@ -1145,7 +1509,7 @@
       <child nodeindex="1" />
     </dialogue-node>
     <dialogue-node nodeindex="1" editor-x="424" editor-y="50">
-      <speak-char idTarget="Abuela">
+      <speak-char idTarget="Abuela1">
         <resources name="No name" />
         <text>No vayas a llegar tarde que ayer en tu fiesta de los 16 te acostaste tarde.</text>
       </speak-char>
@@ -1167,7 +1531,7 @@
       <child nodeindex="4" />
     </option-node>
     <dialogue-node nodeindex="3" editor-x="1269" editor-y="48">
-      <speak-char idTarget="Abuela">
+      <speak-char idTarget="Abuela1">
         <resources name="No name" />
         <text>No me seas vago.</text>
       </speak-char>
@@ -1175,7 +1539,7 @@
       <child nodeindex="2" />
     </dialogue-node>
     <dialogue-node nodeindex="4" editor-x="1201" editor-y="287">
-      <speak-char idTarget="Abuela">
+      <speak-char idTarget="Abuela1">
         <resources name="No name" />
         <text>Muy bien a desayunar y a clase.</text>
       </speak-char>
@@ -1183,14 +1547,14 @@
       <child nodeindex="5" />
     </dialogue-node>
     <dialogue-node nodeindex="5" editor-x="1436" editor-y="287">
-      <speak-char idTarget="Abuela">
+      <speak-char idTarget="Abuela1">
         <resources name="No name" />
         <text>Abrigate que ya empieza a hacer frío.</text>
       </speak-char>
       <condition />
       <end-conversation>
         <effect>
-          <move-npc idTarget="Abuela" x="-250" y="1112" guid="7d47b825-4c98-4892-898a-65bc5d2eae70" />
+          <move-npc idTarget="Abuela1" x="-250" y="1112" guid="7d47b825-4c98-4892-898a-65bc5d2eae70" />
           <condition />
           <activate flag="salirCasa" guid="adedd8fb-341c-45ba-a9e8-d5b4b27466bf" />
           <condition />
@@ -1200,7 +1564,7 @@
   </graph-conversation>
   <graph-conversation id="SaludoColegio">
     <dialogue-node nodeindex="0" editor-x="55" editor-y="24">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>Hola tío, ¿que tal todo?</text>
       </speak-char>
@@ -1216,7 +1580,7 @@
       <child nodeindex="2" />
     </dialogue-node>
     <dialogue-node nodeindex="2" editor-x="543" editor-y="22">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>¡Es verdad se me olvidó felicitarte!</text>
       </speak-char>
@@ -1224,7 +1588,7 @@
       <child nodeindex="3" />
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="778" editor-y="22">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>Estuve jugando todo el día a KillZomb.</text>
       </speak-char>
@@ -1232,7 +1596,7 @@
       <child nodeindex="4" />
     </dialogue-node>
     <dialogue-node nodeindex="4" editor-x="1004" editor-y="20">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>¿Tú juegas?</text>
       </speak-char>
@@ -1260,7 +1624,7 @@
       <child nodeindex="8" />
     </option-node>
     <dialogue-node nodeindex="6" editor-x="1298" editor-y="18">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>Pues si quieres esta tarde jugamos.</text>
       </speak-char>
@@ -1268,7 +1632,7 @@
       <child nodeindex="9" />
     </dialogue-node>
     <dialogue-node nodeindex="7" editor-x="1319" editor-y="274">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>Luego en clase te cuento más sobre el juego.</text>
       </speak-char>
@@ -1276,7 +1640,7 @@
       <child nodeindex="10" />
     </dialogue-node>
     <dialogue-node nodeindex="8" editor-x="1319" editor-y="486">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>Habérmelo dicho antes y jugaba contigo yo estoy igual.</text>
       </speak-char>
@@ -1284,7 +1648,7 @@
       <child nodeindex="11" />
     </dialogue-node>
     <dialogue-node nodeindex="9" editor-x="1533" editor-y="18">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>*Suena la campana* Bueno, vamos dentro y seguimos hablando.</text>
       </speak-char>
@@ -1299,7 +1663,7 @@
       </end-conversation>
     </dialogue-node>
     <dialogue-node nodeindex="10" editor-x="1584" editor-y="274">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>*Suena la campana* Bueno, vamos dentro y seguimos hablando.</text>
       </speak-char>
@@ -1314,7 +1678,7 @@
       </end-conversation>
     </dialogue-node>
     <dialogue-node nodeindex="11" editor-x="1554" editor-y="486">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>*Suena la campana* Bueno, vamos dentro y seguimos hablando.</text>
       </speak-char>
@@ -1331,7 +1695,7 @@
   </graph-conversation>
   <graph-conversation id="ProfesoraAvisoExamenes">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Profesora">
+      <speak-char idTarget="Profesora1">
         <resources name="No name" />
         <text>Buenos días chicos, tomad asiento.</text>
       </speak-char>
@@ -1339,7 +1703,7 @@
       <child nodeindex="1" />
     </dialogue-node>
     <dialogue-node nodeindex="1" editor-x="336" editor-y="54">
-      <speak-char idTarget="Profesora">
+      <speak-char idTarget="Profesora1">
         <resources name="No name" />
         <text>Acordaros que esta semana empiezan los exámenes de este trimestre.</text>
       </speak-char>
@@ -1347,7 +1711,7 @@
       <child nodeindex="2" />
     </dialogue-node>
     <dialogue-node nodeindex="2" editor-x="619" editor-y="54">
-      <speak-char idTarget="Profesora">
+      <speak-char idTarget="Profesora1">
         <resources name="No name" />
         <text>Es muy importante que esteis centrados en los estudios para luego no llevaros ningún disgusto.</text>
       </speak-char>
@@ -1364,22 +1728,22 @@
   </graph-conversation>
   <graph-conversation id="IntroCajas">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>Hola tío, estoy cansadísimo de jugar al volleyball.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>A ver si llego ya a casa y me echo varias partidas al juego.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>Que quiero desbloquear una lootbox de la temporada de Invierno.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>¿Sabes lo que es una lootbox?</text>
       </speak-char>
@@ -1401,17 +1765,17 @@
       <child nodeindex="3" />
     </option-node>
     <dialogue-node nodeindex="2" editor-x="967" editor-y="11">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>Una lootbox es un objeto del juego que requiere mucho tiempo de obtener.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>Con una lootbox se pueden conseguir objetos exclusivos y que te hacen mejorar drásticamente en el juego.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>Pero claro, esto último si tienes suerte.</text>
       </speak-char>
@@ -1421,12 +1785,12 @@
         <text>¿Y cómo se consiguen?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>Las lootboxes se consiguen jugando mucho al juego o mediante pagos dentro del juego. No suelen ser muy caras.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>Por ejemplo,  a mi me tocó una pistola que hace mucho daño a los zombies.</text>
       </speak-char>
@@ -1441,7 +1805,7 @@
         <text>*Suena la campana*</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe11">
         <resources name="No name" />
         <text>Vamos ya ha terminado la clase, ¡a casa!</text>
       </speak-char>
@@ -1454,7 +1818,7 @@
       </end-conversation>
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="931" editor-y="337">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>Pues a mi ayer me tocó una pistola que mata a los zombies de un disparo. Está chetada.</text>
       </speak-char>
@@ -1469,7 +1833,7 @@
         <text>*Suena la campana*</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe12">
         <resources name="No name" />
         <text>Vamos ya ha terminado la clase, ¡a casa!</text>
       </speak-char>
@@ -1484,12 +1848,12 @@
   </graph-conversation>
   <graph-conversation id="DespuesClase">
     <dialogue-node nodeindex="0" editor-x="171" editor-y="36">
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe21">
         <resources name="No name" />
         <text>Menos mal que ya ha acabado el dia</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe21">
         <resources name="No name" />
         <text>¿Quieres que quedemos los colegas para celebrar tu cumple?</text>
       </speak-char>
@@ -1546,7 +1910,7 @@
         <text>Luego te lo confirmo por el movil, hasta mañana</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe21">
         <resources name="No name" />
         <text>Claro, luego hablamos</text>
       </speak-char>
@@ -1663,23 +2027,23 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <dialogue-node nodeindex="1" editor-x="464" editor-y="41">
-      <speak-char idTarget="Pibe1">
+    <dialogue-node nodeindex="1" editor-x="373" editor-y="24">
+      <speak-char idTarget="Pibe13">
         <resources name="No name" />
         <text>¡Vaya que suerte tienes!</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe13">
         <resources name="No name" />
         <text>Yo ayer abrí un par pero nada.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe13">
         <resources name="No name" />
         <text>Bueno, esta tarde veré si puedo jugar y abrir unas cajas.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe13">
         <resources name="No name" />
         <text>Vamos adentro, que no quiero llegar tarde al examen.</text>
       </speak-char>
@@ -1701,7 +2065,7 @@
       <child nodeindex="4" />
     </option-node>
     <dialogue-node nodeindex="3" editor-x="1283" editor-y="19">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe13">
         <resources name="No name" />
         <text>Claro si esta semana está llena de ellos.</text>
       </speak-char>
@@ -1709,7 +2073,7 @@
       <child nodeindex="5" />
     </dialogue-node>
     <dialogue-node nodeindex="4" editor-x="1280" editor-y="198">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe13">
         <resources name="No name" />
         <text>Bueno ahora se lo preguntas a la profe si no me crees.</text>
       </speak-char>
@@ -1717,7 +2081,7 @@
       <child nodeindex="5" />
     </dialogue-node>
     <dialogue-node nodeindex="5" editor-x="1601" editor-y="104">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe13">
         <resources name="No name" />
         <text>Vamos anda.</text>
       </speak-char>
@@ -1726,21 +2090,23 @@
         <effect>
           <trigger-scene idTarget="Dia2Clase" x="1024" y="768" transitionTime="0" transitionType="0" guid="d583015a-ac6c-4082-9bff-f8b1e252bde6" />
           <condition />
+          <increment var="hablado" value="1" guid="84c29d7c-68ce-42b7-b07a-8e761bc4c719" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia2Profe">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Profesora">
+      <speak-char idTarget="Profesora2">
         <resources name="No name" />
         <text>Buenos días, separos en 4 filas que en nada reparto los exámenes.</text>
       </speak-char>
       <condition />
-      <speak-player>
+      <speak-char idTarget="Profesora2">
         <resources name="No name" />
         <text>No puede ser verdad, se me olvidó por completo.</text>
-      </speak-player>
+      </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
@@ -1754,7 +2120,11 @@
       <condition />
       <end-conversation>
         <effect>
-          <increment var="TicherTokin" value="1" guid="4155c398-ba3c-4f04-80c8-621ea66277ba" />
+          <trigger-scene idTarget="Dia2Examen" x="960" y="810" transitionTime="0" transitionType="0" guid="aad8a804-f653-4fa9-81d5-1f5152bed788" />
+          <condition />
+          <trigger-conversation idTarget="Dia2Ex" guid="fe1b83a8-4152-42fe-8014-fd97fd384999" />
+          <condition />
+          <increment var="habladopibe2" value="1" guid="4504604d-4c2d-4d1f-af48-cecd5a4ddc8a" />
           <condition />
         </effect>
       </end-conversation>
@@ -1873,7 +2243,7 @@
       <condition />
       <child nodeindex="11" />
     </dialogue-node>
-    <option-node nodeindex="11" question="¿Dónde está el desierto de Atacama?" random="yes" preListening="yes" editor-x="1708" editor-y="135" x="1708" y="135">
+    <option-node nodeindex="11" question="¿Dónde está el desierto de Atacama?" random="yes" keepShowing="yes" preListening="yes" editor-x="1708" editor-y="135" x="1708" y="135">
       <speak-player>
         <text>Chile</text>
         <resources name="No name" />
@@ -1937,12 +2307,12 @@
   </graph-conversation>
   <graph-conversation id="Dia2Quedar">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe22">
         <resources name="No name" />
         <text>Oye al final vamos hoy al cine.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe22">
         <resources name="No name" />
         <text>¿Te vienes?</text>
       </speak-char>
@@ -1964,7 +2334,7 @@
       <child nodeindex="3" />
     </option-node>
     <dialogue-node nodeindex="2" editor-x="829" editor-y="43">
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe22">
         <resources name="No name" />
         <text>¿Y eso?</text>
       </speak-char>
@@ -1977,7 +2347,7 @@
       <child nodeindex="4" />
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="834" editor-y="249">
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe22">
         <resources name="No name" />
         <text>Bueno pues si te dan algo vente.</text>
       </speak-char>
@@ -1985,7 +2355,7 @@
       <child nodeindex="4" />
     </dialogue-node>
     <dialogue-node nodeindex="4" editor-x="1248" editor-y="111">
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe22">
         <resources name="No name" />
         <text>Hasta mañana entonces.</text>
       </speak-char>
@@ -2000,7 +2370,7 @@
   </graph-conversation>
   <graph-conversation id="Dia2PedirDinero">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre1">
         <resources name="No name" />
         <text>Hola hijo, ¿que tal las clases?</text>
       </speak-char>
@@ -2022,12 +2392,12 @@
       <child nodeindex="3" />
     </option-node>
     <dialogue-node nodeindex="2" editor-x="757" editor-y="19">
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre1">
         <resources name="No name" />
         <text>Hijo tienes que estar más atento.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre1">
         <resources name="No name" />
         <text>Estudia para los siguientes y no te preocupes.</text>
       </speak-char>
@@ -2053,7 +2423,7 @@
         <text>Me han dicho de ir al cine mis amigos y no tengo dinero.</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre1">
         <resources name="No name" />
         <text>Bueno... Si es para eso te doy 10 euros.</text>
       </speak-char>
@@ -2068,7 +2438,12 @@
         <text>#O Bueno, ahora me echaré una partidita. Que bien lo voy a pasar.</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="habladomama" value="1" guid="6f21337a-6e1a-4365-85f7-e10b19ffbbab" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia2PensamPartidaMala">
@@ -2123,12 +2498,12 @@
   </graph-conversation>
   <graph-conversation id="Dia3Habitacion">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre2">
         <resources name="No name" />
         <text>Buenos días.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre2">
         <resources name="No name" />
         <text>Acuerdate que hoy tienes que irte a comer a casa de la abuela, que hoy tengo reunión en el trabajo.</text>
       </speak-char>
@@ -2138,7 +2513,7 @@
         <text>Vale mamá.</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre2">
         <resources name="No name" />
         <text>Y ve preparandote ya que si no vas a llegar tarde.</text>
       </speak-char>
@@ -2148,17 +2523,22 @@
         <text>Voy.</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="habladomama" value="1" guid="f33f11b4-4b1a-475b-952c-f88dced90bfc" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia3ColegioExt">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Pibe3">
+      <speak-char idTarget="Pibe32">
         <resources name="No name" />
         <text>¡Que guay estuvo ayer la quedada!</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe24">
         <resources name="No name" />
         <text>¡Sí te tendrías que haber venido!</text>
       </speak-char>
@@ -2168,7 +2548,7 @@
         <text>Oh lo siento chicos al final no pude.</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe15">
         <resources name="No name" />
         <text>Bueno no pasa nada, ya volveremos otro día.</text>
       </speak-char>
@@ -2178,7 +2558,7 @@
         <text>Bueno vamos dentro que espero que el examen de hoy vaya mejor.</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe3">
+      <speak-char idTarget="Pibe32">
         <resources name="No name" />
         <text>Venga a ver si hay suerte.</text>
       </speak-char>
@@ -2198,17 +2578,17 @@
         <text>¿Oye chavales como habéis visto el examen?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe15">
         <resources name="No name" />
         <text>Normalito.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe24">
         <resources name="No name" />
         <text>Sí no se ha pasado mucho la verdad.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe3">
+      <speak-char idTarget="Pibe32">
         <resources name="No name" />
         <text>Yo creo que sacaré un notable.</text>
       </speak-char>
@@ -2218,7 +2598,7 @@
         <text>Vaya... yo no se si aprobaré.</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe24">
         <resources name="No name" />
         <text>Ya se verán las notas en unos días.</text>
       </speak-char>
@@ -2243,7 +2623,7 @@
   </graph-conversation>
   <graph-conversation id="Dia3CasaAbuela">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Abuela">
+      <speak-char idTarget="Abuela2">
         <resources name="No name" />
         <text>¿Como está mi nieto?</text>
       </speak-char>
@@ -2265,7 +2645,7 @@
       <child nodeindex="3" />
     </option-node>
     <dialogue-node nodeindex="2" editor-x="683" editor-y="0">
-      <speak-char idTarget="Abuela">
+      <speak-char idTarget="Abuela2">
         <resources name="No name" />
         <text>No te preocupes, ahora voy a hacer la comida y verás que todo va a mejor.</text>
       </speak-char>
@@ -2283,7 +2663,7 @@
       </end-conversation>
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="655" editor-y="216">
-      <speak-char idTarget="Abuela">
+      <speak-char idTarget="Abuela2">
         <resources name="No name" />
         <text>No te preocupes, ahora voy a hacer la comida y verás que todo va a mejor.</text>
       </speak-char>
@@ -2320,7 +2700,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" preListening="yes" editor-x="546" editor-y="53" x="546" y="53">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="546" editor-y="53" x="546" y="53">
       <speak-player>
         <text>Robar a la abuela</text>
         <resources name="No name" />
@@ -2399,7 +2779,7 @@
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia3PostApertura">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="0" editor-y="33">
       <speak-player>
         <resources name="No name" />
         <text>#O No me ha tocado nada interesante y además me he metido en un lío gordo.</text>
@@ -2417,7 +2797,7 @@
       <condition />
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="Dia4ColegioExt1" x="1024" y="768" transitionTime="0" transitionType="0" guid="a5928afd-1a2a-42db-a683-879fc97b93d5" />
+          <trigger-cutscene idTarget="Nextday4" guid="ae314e0a-497e-4d1d-9cb1-ead0cd279bd0" />
           <condition />
         </effect>
       </end-conversation>
@@ -2425,12 +2805,12 @@
   </graph-conversation>
   <graph-conversation id="Dia4Ext">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe14">
         <resources name="No name" />
         <text>Hola tío, ¿qué tal?</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe14">
         <resources name="No name" />
         <text>He oído rumores de que hoy la profe nos va a dar la nota del examen. Espero aprobar.</text>
       </speak-char>
@@ -2445,7 +2825,7 @@
         <text>¿Me podrías hacer un favor?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe14">
         <resources name="No name" />
         <text>Dime.</text>
       </speak-char>
@@ -2455,7 +2835,7 @@
         <text>¿Me podrías dejar dinero para abrir cajas? Te lo devolveré cuanto antes.</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe14">
         <resources name="No name" />
         <text>¿Pero qué dices tío? ¿Cuánto dinero te has gastado en cajas?</text>
       </speak-char>
@@ -2465,17 +2845,22 @@
         <text>Eso no te importa. ¿Me lo vas a dar o no?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe2">
+      <speak-char idTarget="Pibe14">
         <resources name="No name" />
         <text>Estás como una cabra. Necesitas ayuda profesional, no me hables más.</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="hablado" value="1" guid="fc3075bb-5f0e-4f51-a8d0-a40f4609a2ae" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia4Ext2">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe23">
         <resources name="No name" />
         <text>Hey, ¿preparado para la nota del examen?</text>
       </speak-char>
@@ -2490,7 +2875,7 @@
         <text>Ayúdame con otra cosa. ¿Me puedes dejar 20 créditos?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe23">
         <resources name="No name" />
         <text>¿Se puede saber para qué necesitas tanto dinero?</text>
       </speak-char>
@@ -2500,7 +2885,7 @@
         <text>Quiero abrir cajas del KillZomb.</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe23">
         <resources name="No name" />
         <text>Para eso no te voy a dejar dinero. Pídele dinero a tu madre o a tu abuela.</text>
       </speak-char>
@@ -2510,7 +2895,7 @@
         <text>No, ayer le robé a mi abuela 100 créditos.</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Pibe1">
+      <speak-char idTarget="Pibe23">
         <resources name="No name" />
         <text>Estás enfermo, ¿cómo le puedes hacer eso a tu abuela? No quiero que sepas nada de nosotros.</text>
       </speak-char>
@@ -2520,17 +2905,22 @@
         <text>Vale chao.</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="habladopibe2" value="1" guid="226444a9-bef4-447b-8a71-7ff7c677f5d4" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia4Ext3">
     <dialogue-node nodeindex="0" editor-x="54" editor-y="44">
-      <speak-char idTarget="Pibe3">
+      <speak-char idTarget="Pibe31">
         <resources name="No name" />
         <text>Me han dicho que le has robado dinero a tu abuela para gastártelo en cajas del KillZomb</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Pibe3">
+      <speak-char idTarget="Pibe31">
         <resources name="No name" />
         <text>¿Es verdad?</text>
       </speak-char>
@@ -2552,35 +2942,45 @@
       <child nodeindex="3" />
     </option-node>
     <dialogue-node nodeindex="2" editor-x="509" editor-y="44">
-      <speak-char idTarget="Pibe3">
+      <speak-char idTarget="Pibe31">
         <resources name="No name" />
         <text>No sé como no se te cae la cara de la vergüenza.</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="habladopibe3" value="1" guid="809d96b4-046b-4791-a1ee-cc40e7fc1df0" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="509" editor-y="235">
-      <speak-char idTarget="Pibe3">
+      <speak-char idTarget="Pibe31">
         <resources name="No name" />
         <text>Menudo tío más despreciable.</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="habladopibe3" value="1" guid="3021df20-2120-41b1-906d-973bda4175a1" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia4NotaExamen">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Profesora">
+      <speak-char idTarget="Profesora3">
         <resources name="No name" />
         <text>Buenos días a todos.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Profesora">
+      <speak-char idTarget="Profesora3">
         <resources name="No name" />
         <text>Os informo de que tengo las notas del examen.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Profesora">
+      <speak-char idTarget="Profesora3">
         <resources name="No name" />
         <text>Ha habido varias notas que me han sorprendido, tanto para bien como para mal</text>
       </speak-char>
@@ -2590,7 +2990,7 @@
         <text>¿Qué nota he sacado?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Profesora">
+      <speak-char idTarget="Profesora3">
         <resources name="No name" />
         <text>Has sido la peor nota de la clase. Más tarde, hablaré con tus padres.</text>
       </speak-char>
@@ -2600,7 +3000,12 @@
         <text>*Suena la campana*</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <increment var="TicherTokin" value="1" guid="ff63d9a1-1e24-4317-90d2-5cb3028b38e7" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia4Ext4">
@@ -2619,8 +3024,8 @@
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia4Casa">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Madre">
+    <dialogue-node nodeindex="0" editor-x="0" editor-y="338">
+      <speak-char idTarget="Madre4">
         <resources name="No name" />
         <text>Hola hijo, ¿qué tal las clases?</text>
       </speak-char>
@@ -2642,7 +3047,7 @@
       <child nodeindex="3" />
     </option-node>
     <dialogue-node nodeindex="2" editor-x="505" editor-y="50">
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre4">
         <resources name="No name" />
         <text>Genial hijo.</text>
       </speak-char>
@@ -2650,7 +3055,7 @@
       <child nodeindex="4" />
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="505" editor-y="241">
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre4">
         <resources name="No name" />
         <text>Genial hijo.</text>
       </speak-char>
@@ -2663,12 +3068,16 @@
         <text>¿Puedes dejarme solo? Voy a estudiar</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre4">
         <resources name="No name" />
         <text>Vale hijo, que se de bien y ponte las pilas.</text>
       </speak-char>
       <condition />
       <child nodeindex="5" />
+      <effect>
+        <move-npc idTarget="Madre4" x="-500" y="1100" guid="fa1522da-db15-4b3d-8612-baa2a9e07827" />
+        <condition />
+      </effect>
     </dialogue-node>
     <dialogue-node nodeindex="5" editor-x="1027" editor-y="136">
       <speak-player>
@@ -2676,7 +3085,16 @@
         <text>#O Ahora que se ha ido, podré abrir más cajas.</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <trigger-conversation idTarget="Dia4SinCajas" guid="eb471205-d9d7-4b4f-b17f-85b422a8f7f1" />
+          <condition />
+          <trigger-conversation idTarget="Dia4PidiendoDinero" guid="58115bd6-efbf-4d05-aec8-6bc4a9bbed1c" />
+          <condition />
+          <trigger-cutscene idTarget="SemanasDespues" guid="6dd6f7aa-c2f7-4914-9ef3-1b814556ab0a" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia4SinCajas">
@@ -2726,17 +3144,17 @@
   </graph-conversation>
   <graph-conversation id="MesesDespues">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre3">
         <resources name="No name" />
         <text>Hijo despierta, hijo.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre3">
         <resources name="No name" />
         <text>Desde antes de que la abuela se marchara al más allá, ya estabas raro.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre3">
         <resources name="No name" />
         <text>¿Qué te pasa?</text>
       </speak-char>
@@ -2758,17 +3176,17 @@
       <child nodeindex="3" />
     </option-node>
     <dialogue-node nodeindex="2" editor-x="505" editor-y="50">
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre3">
         <resources name="No name" />
         <text>Últimamente estás bajando mucho el rendimiento escolar.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre3">
         <resources name="No name" />
         <text>Antes sacabas buenas notas.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre3">
         <resources name="No name" />
         <text>¿Seguro que está todo bien?</text>
       </speak-char>
@@ -2786,7 +3204,12 @@
         <text>Quiero volver a lo de antes, echo de menos mi vida anterior, a mis amigos y a mi abuela.</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <trigger-cutscene idTarget="Creditos" guid="e692da4b-a641-48bb-bf8b-d4ecc288322d" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
     <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="904" editor-y="50" x="904" y="50">
       <speak-player>
@@ -2803,12 +3226,12 @@
       <child nodeindex="3" />
     </option-node>
     <dialogue-node nodeindex="5" editor-x="1161" editor-y="37">
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre3">
         <resources name="No name" />
         <text>La abuela se murió con la duda de que le desapareció dinero.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Madre">
+      <speak-char idTarget="Madre3">
         <resources name="No name" />
         <text>¿No tendrás nada que ver con eso no?</text>
       </speak-char>
@@ -2911,6 +3334,33 @@
     </documentation>
     <resources name="No name">
       <asset type="slides" uri="assets/animation/chateoqueteveo.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="Nextday4" start="no" idTarget="Dia4ColegioExt1" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/dianext.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="SemanasDespues" start="no" idTarget="MDFinal" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/semdes.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="Creditos" start="no" next="end-chapter" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/cred.eaa.xml" />
     </resources>
     <name>
     </name>
