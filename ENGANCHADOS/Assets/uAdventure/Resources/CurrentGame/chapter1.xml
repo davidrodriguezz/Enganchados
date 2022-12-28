@@ -838,7 +838,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="Dia1Habitacion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1" class="accesible" type="area">
+  <scene id="Dia1Habitacion" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="no" playerLayer="-2" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -3268,6 +3268,7 @@
   <unity-scene id="MobileMiniJuego2" scene="Assets/Scenes/MobileMiniJuego2.unity" />
   <unity-scene id="KillZomb3" scene="Assets/Scenes/KillZomb3.unity" />
   <unity-scene id="MinijuegoRuleta3" scene="Assets/Scenes/RuletaMinigame3.unity" />
+  <unity-scene id="Menu" scene="Assets/Scenes/MenuMain.unity" />
   <slidescene id="Nextday" start="no" idTarget="Dia2Habitacion1" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
@@ -3371,6 +3372,15 @@
     </documentation>
     <resources name="No name">
       <asset type="slides" uri="assets/animation/cred.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="inicio" start="yes" idTarget="Menu" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/aaaaaaaa.eaa.xml" />
     </resources>
     <name>
     </name>

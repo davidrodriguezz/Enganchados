@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RuletaMinigame3.unity
     guid: 659c4d62a32061f4fafb7e9d54b1ff2d
+  - enabled: 1
+    path: Assets/Scenes/MenuMain.unity
+    guid: 3c4306f53f7c56f4393250988902e6f9
   m_configObjects: {}

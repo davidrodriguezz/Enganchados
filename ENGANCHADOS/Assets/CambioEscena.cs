@@ -89,5 +89,13 @@ public class CambioEscena : MonoBehaviour
         Game.Instance.Execute(new EffectHolder(new Effects { new TriggerCutsceneEffect("Nextday4") }));
 
     }
+    public void empiezaJuego()
+    {
+        Game.Instance.Execute(new EffectHolder(new Effects { new TriggerSceneEffect("Dia1Habitacion", 0, 0) }));
+    }
+    public void cerrar()
+    {
+        Application.Quit();
+    }
 
 }
