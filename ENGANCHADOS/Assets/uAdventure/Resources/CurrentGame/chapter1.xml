@@ -1518,13 +1518,13 @@
     </dialogue-node>
     <option-node nodeindex="2" random="yes" keepShowing="yes" preListening="yes" editor-x="819" editor-y="50" x="819" y="50">
       <speak-player>
-        <text>5 minutitos más</text>
+        <text>5 minutitos más.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="3" />
       <speak-player>
-        <text>Ya voy</text>
+        <text>Ya voy.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -1566,7 +1566,7 @@
     <dialogue-node nodeindex="0" editor-x="55" editor-y="24">
       <speak-char idTarget="Pibe11">
         <resources name="No name" />
-        <text>Hola tío, ¿que tal todo?</text>
+        <text>Hola tío, ¿qué tal todo?</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
@@ -1603,21 +1603,21 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="1046" editor-y="235" x="1046" y="235">
+    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="1047" editor-y="235" x="1047" y="235">
       <speak-player>
-        <text>Sí, empecé a jugar unos días</text>
+        <text>Sí, empecé a jugar unos días.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="6" />
       <speak-player>
-        <text>Me quiere sonar el nombre</text>
+        <text>Me quiere sonar el nombre.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="7" />
       <speak-player>
-        <text>Claro estoy viciadísimo</text>
+        <text>Claro estoy viciadísimo.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -1648,9 +1648,14 @@
       <child nodeindex="11" />
     </dialogue-node>
     <dialogue-node nodeindex="9" editor-x="1533" editor-y="18">
+      <speak-player>
+        <resources name="No name" />
+        <text>#! *Suena la campana*</text>
+      </speak-player>
+      <condition />
       <speak-char idTarget="Pibe11">
         <resources name="No name" />
-        <text>*Suena la campana* Bueno, vamos dentro y seguimos hablando.</text>
+        <text>Bueno, vamos dentro y seguimos hablando.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -1663,9 +1668,14 @@
       </end-conversation>
     </dialogue-node>
     <dialogue-node nodeindex="10" editor-x="1584" editor-y="274">
+      <speak-player>
+        <resources name="No name" />
+        <text>#! *Suena la campana*</text>
+      </speak-player>
+      <condition />
       <speak-char idTarget="Pibe11">
         <resources name="No name" />
-        <text>*Suena la campana* Bueno, vamos dentro y seguimos hablando.</text>
+        <text>Bueno, vamos dentro y seguimos hablando.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -1678,9 +1688,14 @@
       </end-conversation>
     </dialogue-node>
     <dialogue-node nodeindex="11" editor-x="1554" editor-y="486">
+      <speak-player>
+        <resources name="No name" />
+        <text>#! *Suena la campana*</text>
+      </speak-player>
+      <condition />
       <speak-char idTarget="Pibe11">
         <resources name="No name" />
-        <text>*Suena la campana* Bueno, vamos dentro y seguimos hablando.</text>
+        <text>Bueno, vamos dentro y seguimos hablando.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -1750,7 +1765,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="466" editor-y="50" x="466" y="50">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="356" editor-y="17" x="356" y="17">
       <speak-player>
         <text>No tengo ni idea de lo que es eso.</text>
         <resources name="No name" />
@@ -1792,7 +1807,7 @@
       <condition />
       <speak-char idTarget="Pibe12">
         <resources name="No name" />
-        <text>Por ejemplo,  a mi me tocó una pistola que hace mucho daño a los zombies.</text>
+        <text>Por ejemplo, a mi me tocó una pistola que hace mucho daño a los zombies.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -1802,7 +1817,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Suena la campana*</text>
+        <text>#! *Suena la campana*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Pibe11">
@@ -1830,7 +1845,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Suena la campana*</text>
+        <text>#! *Suena la campana*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Pibe12">
@@ -1850,31 +1865,31 @@
     <dialogue-node nodeindex="0" editor-x="171" editor-y="36">
       <speak-char idTarget="Pibe21">
         <resources name="No name" />
-        <text>Menos mal que ya ha acabado el dia</text>
+        <text>Menos mal que ya ha acabado el día.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Pibe21">
         <resources name="No name" />
-        <text>¿Quieres que quedemos los colegas para celebrar tu cumple?</text>
+        <text>¿Qué día quieres que quedemos los colegas para celebrar tu cumple?</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
     <option-node nodeindex="1" question="Que dia te vendria mejor quedar" random="yes" keepShowing="yes" preListening="yes" editor-x="783" editor-y="24" x="783" y="24">
       <speak-player>
-        <text>Viernes</text>
+        <text>Viernes.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
       <speak-player>
-        <text>Sábado</text>
+        <text>Sábado.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="3" />
       <speak-player>
-        <text>Domingo</text>
+        <text>Domingo.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -1883,7 +1898,7 @@
     <dialogue-node nodeindex="2" editor-x="1079" editor-y="13">
       <speak-player>
         <resources name="No name" />
-        <text>Creo que el viernes me vendria bien</text>
+        <text>Creo que el viernes me vendría bien.</text>
       </speak-player>
       <condition />
       <child nodeindex="5" />
@@ -1891,7 +1906,7 @@
     <dialogue-node nodeindex="3" editor-x="1076" editor-y="226">
       <speak-player>
         <resources name="No name" />
-        <text>Creo que el sábado me vendria bien</text>
+        <text>Creo que el sábado me vendría bien.</text>
       </speak-player>
       <condition />
       <child nodeindex="5" />
@@ -1899,7 +1914,7 @@
     <dialogue-node nodeindex="4" editor-x="1076" editor-y="417">
       <speak-player>
         <resources name="No name" />
-        <text>Creo que el domingo me vendria bien</text>
+        <text>Creo que el domingo me vendría bien.</text>
       </speak-player>
       <condition />
       <child nodeindex="5" />
@@ -1907,12 +1922,12 @@
     <dialogue-node nodeindex="5" editor-x="1392" editor-y="274">
       <speak-player>
         <resources name="No name" />
-        <text>Luego te lo confirmo por el movil, hasta mañana</text>
+        <text>Luego te lo confirmo por el móvil, hasta mañana.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Pibe21">
         <resources name="No name" />
-        <text>Claro, luego hablamos</text>
+        <text>Claro, luego hablamos.</text>
       </speak-char>
       <condition />
       <end-conversation>
@@ -2012,7 +2027,7 @@
     <dialogue-node nodeindex="0" editor-x="0" editor-y="30">
       <speak-player>
         <resources name="No name" />
-        <text>Hola ¿que tal?</text>
+        <text>Hola ¿qué tal?</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -2067,7 +2082,7 @@
     <dialogue-node nodeindex="3" editor-x="1283" editor-y="19">
       <speak-char idTarget="Pibe13">
         <resources name="No name" />
-        <text>Claro si esta semana está llena de ellos.</text>
+        <text>Claro, si esta semana está llena de ellos.</text>
       </speak-char>
       <condition />
       <child nodeindex="5" />
@@ -2100,22 +2115,22 @@
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Profesora2">
         <resources name="No name" />
-        <text>Buenos días, separos en 4 filas que en nada reparto los exámenes.</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="Profesora2">
-        <resources name="No name" />
-        <text>No puede ser verdad, se me olvidó por completo.</text>
+        <text>Buenos días, separaos en 4 filas que en nada reparto los exámenes.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>No he tocado el libro.</text>
+        <text>#O No puede ser verdad, se me olvidó por completo.</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Voy a suspender...</text>
+        <text>#O No he tocado el libro.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O Voy a suspender...</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -2141,19 +2156,19 @@
     </dialogue-node>
     <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="419" editor-y="28" x="419" y="28">
       <speak-player>
-        <text>306</text>
+        <text>306.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
       <speak-player>
-        <text>106</text>
+        <text>106.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="3" />
       <speak-player>
-        <text>206</text>
+        <text>206.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -2162,7 +2177,7 @@
     <dialogue-node nodeindex="2" editor-x="777" editor-y="23">
       <speak-player>
         <resources name="No name" />
-        <text>Tiene que ser esta.</text>
+        <text>#O Tiene que ser esta.</text>
       </speak-player>
       <condition />
       <child nodeindex="5" />
@@ -2170,7 +2185,7 @@
     <dialogue-node nodeindex="3" editor-x="641" editor-y="216">
       <speak-player>
         <resources name="No name" />
-        <text>Es esta seguro.</text>
+        <text>#O Es esta seguro.</text>
       </speak-player>
       <condition />
       <child nodeindex="5" />
@@ -2178,7 +2193,7 @@
     <dialogue-node nodeindex="4" editor-x="795" editor-y="404">
       <speak-player>
         <resources name="No name" />
-        <text>No puedo fallar aquí.</text>
+        <text>#O No puedo fallar aquí.</text>
       </speak-player>
       <condition />
       <child nodeindex="5" />
@@ -2186,7 +2201,7 @@
     <dialogue-node nodeindex="5" editor-x="878" editor-y="206">
       <speak-player>
         <resources name="No name" />
-        <text>#O ¿Qué es el sindrome de Alejandría?</text>
+        <text>¿Qué es el sindrome de Alejandría?</text>
       </speak-player>
       <condition />
       <child nodeindex="6" />
@@ -2214,7 +2229,7 @@
     <dialogue-node nodeindex="7" editor-x="1285" editor-y="13">
       <speak-player>
         <resources name="No name" />
-        <text>¿Qué son estas preguntas?</text>
+        <text>#O ¿Qué son estas preguntas?</text>
       </speak-player>
       <condition />
       <child nodeindex="10" />
@@ -2222,7 +2237,7 @@
     <dialogue-node nodeindex="8" editor-x="1297" editor-y="208">
       <speak-player>
         <resources name="No name" />
-        <text>¿Qué son estas preguntas?</text>
+        <text>#O ¿Qué son estas preguntas?</text>
       </speak-player>
       <condition />
       <child nodeindex="10" />
@@ -2230,7 +2245,7 @@
     <dialogue-node nodeindex="9" editor-x="1285" editor-y="395">
       <speak-player>
         <resources name="No name" />
-        <text>¿Qué son estas preguntas?</text>
+        <text>#O ¿Qué son estas preguntas?</text>
       </speak-player>
       <condition />
       <child nodeindex="10" />
@@ -2238,20 +2253,20 @@
     <dialogue-node nodeindex="10" editor-x="1522" editor-y="193">
       <speak-player>
         <resources name="No name" />
-        <text>#O Última pregunta: ¿Dónde está el desierto de Atacama?</text>
+        <text>Última pregunta: ¿Dónde está el desierto de Atacama?</text>
       </speak-player>
       <condition />
       <child nodeindex="11" />
     </dialogue-node>
     <option-node nodeindex="11" question="¿Dónde está el desierto de Atacama?" random="yes" keepShowing="yes" preListening="yes" editor-x="1708" editor-y="135" x="1708" y="135">
       <speak-player>
-        <text>Chile</text>
+        <text>Chile.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="12" />
       <speak-player>
-        <text>Argentina</text>
+        <text>Argentina.</text>
         <resources name="No name">
           <asset type="image" uri="" />
         </resources>
@@ -2259,7 +2274,7 @@
       <condition />
       <child nodeindex="13" />
       <speak-player>
-        <text>Marruecos</text>
+        <text>Marruecos.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -2309,7 +2324,7 @@
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Pibe22">
         <resources name="No name" />
-        <text>Oye al final vamos hoy al cine.</text>
+        <text>Oye, al final vamos hoy al cine.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Pibe22">
@@ -2372,7 +2387,7 @@
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Madre1">
         <resources name="No name" />
-        <text>Hola hijo, ¿que tal las clases?</text>
+        <text>Hola hijo, ¿qué tal las clases?</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
@@ -2385,7 +2400,7 @@
       <condition />
       <child nodeindex="2" />
       <speak-player>
-        <text>Bien,  como siempre.</text>
+        <text>Bien, como siempre.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -2450,12 +2465,12 @@
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-player>
         <resources name="No name" />
-        <text>#O Como puede ser que ahora no mate como ayer.</text>
+        <text>#O ¿Cómo puede ser que ahora no mate como ayer?</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>#O ¡AH, HAN ACTUALIZADO EL JUEGO! </text>
+        <text>#! ¡AH, HAN ACTUALIZADO EL JUEGO! </text>
       </speak-player>
       <condition />
       <speak-player>
@@ -2505,7 +2520,7 @@
       <condition />
       <speak-char idTarget="Madre2">
         <resources name="No name" />
-        <text>Acuerdate que hoy tienes que irte a comer a casa de la abuela, que hoy tengo reunión en el trabajo.</text>
+        <text>Acuérdate que hoy tienes que irte a comer a casa de la abuela, que hoy tengo reunión en el trabajo.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -2515,7 +2530,7 @@
       <condition />
       <speak-char idTarget="Madre2">
         <resources name="No name" />
-        <text>Y ve preparandote ya que si no vas a llegar tarde.</text>
+        <text>Y ve preparándote ya que si no vas a llegar tarde.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -2535,7 +2550,7 @@
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Pibe32">
         <resources name="No name" />
-        <text>¡Que guay estuvo ayer la quedada!</text>
+        <text>¡Qué guay estuvo ayer la quedada!</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Pibe24">
@@ -2545,17 +2560,17 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Oh lo siento chicos al final no pude.</text>
+        <text>Oh, lo siento chicos que al final no pude.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Pibe15">
         <resources name="No name" />
-        <text>Bueno no pasa nada, ya volveremos otro día.</text>
+        <text>Bueno, no pasa nada, ya volveremos otro día.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Bueno vamos dentro que espero que el examen de hoy vaya mejor.</text>
+        <text>Bueno, vamos dentro que espero que el examen de hoy vaya mejor.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Pibe32">
@@ -2575,7 +2590,7 @@
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-player>
         <resources name="No name" />
-        <text>¿Oye chavales como habéis visto el examen?</text>
+        <text>Oye chavales, ¿cómo habéis visto el examen?</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Pibe15">
@@ -2585,7 +2600,7 @@
       <condition />
       <speak-char idTarget="Pibe24">
         <resources name="No name" />
-        <text>Sí no se ha pasado mucho la verdad.</text>
+        <text>Sí, no se ha pasado mucho la verdad.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Pibe32">
@@ -2595,7 +2610,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Vaya... yo no se si aprobaré.</text>
+        <text>Vaya... Yo no se si aprobaré.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Pibe24">
@@ -2625,14 +2640,14 @@
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Abuela2">
         <resources name="No name" />
-        <text>¿Como está mi nieto?</text>
+        <text>¿Cómo está mi nieto?</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="415" editor-y="50" x="415" y="50">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="102" editor-y="280" x="102" y="280">
       <speak-player>
-        <text>Bien un poco cansado de tantos exámenes.</text>
+        <text>Bien, un poco cansado de tantos exámenes.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -2700,27 +2715,27 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="546" editor-y="53" x="546" y="53">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="100" editor-y="230" x="100" y="230">
       <speak-player>
-        <text>Robar a la abuela</text>
+        <text>Robar a la abuela.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
       <speak-player>
-        <text>Robar a la abuela</text>
+        <text>Robar a la abuela.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="3" />
       <speak-player>
-        <text>Robar a la abuela</text>
+        <text>Robar a la abuela.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="4" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="766" editor-y="53">
+    <dialogue-node nodeindex="2" editor-x="571" editor-y="10">
       <speak-player>
         <resources name="No name" />
         <text>#O Le robaré dinero a la abuela, no creo que pase nada.</text>
@@ -2728,7 +2743,7 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="766" editor-y="244">
+    <dialogue-node nodeindex="3" editor-x="554" editor-y="154">
       <speak-player>
         <resources name="No name" />
         <text>#O Le robaré dinero a la abuela, no creo que pase nada.</text>
@@ -2736,7 +2751,7 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="766" editor-y="434">
+    <dialogue-node nodeindex="4" editor-x="533" editor-y="295">
       <speak-player>
         <resources name="No name" />
         <text>#O Le robaré dinero a la abuela, no creo que pase nada.</text>
@@ -2792,7 +2807,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Ya sé, le pediré ayuda a mis amigos de clase. Ellos no me fallarán.</text>
+        <text>#O Ya sé, le pediré ayuda a mis amigos de clase. Ellos no me fallarán.</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -2914,10 +2929,10 @@
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="Dia4Ext3">
-    <dialogue-node nodeindex="0" editor-x="54" editor-y="44">
+    <dialogue-node nodeindex="0" editor-x="0" editor-y="390">
       <speak-char idTarget="Pibe31">
         <resources name="No name" />
-        <text>Me han dicho que le has robado dinero a tu abuela para gastártelo en cajas del KillZomb</text>
+        <text>Me han dicho que le has robado dinero a tu abuela para gastártelo en cajas del KillZomb.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Pibe31">
@@ -2982,7 +2997,7 @@
       <condition />
       <speak-char idTarget="Profesora3">
         <resources name="No name" />
-        <text>Ha habido varias notas que me han sorprendido, tanto para bien como para mal</text>
+        <text>Ha habido varias notas que me han sorprendido, tanto para bien como para mal.</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -2997,7 +3012,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Suena la campana*</text>
+        <text>#! *Suena la campana*</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -3062,10 +3077,10 @@
       <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="792" editor-y="136">
+    <dialogue-node nodeindex="4" editor-x="684" editor-y="2">
       <speak-player>
         <resources name="No name" />
-        <text>¿Puedes dejarme solo? Voy a estudiar</text>
+        <text>¿Puedes dejarme solo? Voy a estudiar.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Madre4">
@@ -3101,7 +3116,7 @@
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-player>
         <resources name="No name" />
-        <text>#O ¿Como es que no tengo dinero para abrir cajas? NECESITO MAS</text>
+        <text>#O ¿Como es que no tengo dinero para abrir cajas? NECESITO MAS.</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -3158,7 +3173,7 @@
     </dialogue-node>
     <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="285" editor-y="50" x="285" y="50">
       <speak-player>
-        <text>Está todo bien</text>
+        <text>Está todo bien.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -3206,7 +3221,7 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="904" editor-y="50" x="904" y="50">
+    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="567" editor-y="297" x="567" y="297">
       <speak-player>
         <text>Sí todo bien.</text>
         <resources name="No name" />
@@ -3214,7 +3229,7 @@
       <condition />
       <child nodeindex="5" />
       <speak-player>
-        <text>Lo estoy pasando mal</text>
+        <text>Lo estoy pasando mal.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
