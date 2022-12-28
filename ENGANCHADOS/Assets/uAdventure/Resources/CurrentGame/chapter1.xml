@@ -3134,12 +3134,7 @@
         <text>Recibes +50 créditos.</text>
       </speak-player>
       <condition />
-      <end-conversation>
-        <effect>
-          <trigger-cutscene idTarget="PostComer" guid="a748f01e-ef42-42a1-bbfa-8dce001e7e4f" />
-          <condition />
-        </effect>
-      </end-conversation>
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="MesesDespues">
