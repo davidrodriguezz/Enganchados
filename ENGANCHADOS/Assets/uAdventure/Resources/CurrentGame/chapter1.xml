@@ -1490,6 +1490,21 @@
       </active-area>
     </active-areas>
   </scene>
+  <scene id="MenuInicio" hideInventory="yes" allowsZoom="no" allowsSavingGame="yes" start="yes" playerLayer="-2" playerScale="1.706667" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/titulo.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="1024" y="768" />
+    <exits>
+      <exit rectangular="yes" x="-3" y="0" width="2049" height="1022" hasInfluenceArea="no" idTarget="Menu" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+      </exit>
+    </exits>
+  </scene>
   <graph-conversation id="PrimeraManana">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Abuela1">
@@ -2706,7 +2721,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="100" editor-y="230" x="100" y="230">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="80" editor-y="303" x="80" y="303">
       <speak-player>
         <text>Robar a la abuela.</text>
         <resources name="No name" />
@@ -2720,7 +2735,7 @@
       <condition />
       <child nodeindex="3" />
       <speak-player>
-        <text>Extraer contenido monetario de la bolsa de la madre de mi progenitora, de manera ilegitima y un tanto sospechosa e inmoralmente cruel (Se muere de arritma cardiaca tras contemplar la falta de dinero en sus aposentos tars la comida con su nieto).</text>
+        <text>Tomar dinero "prestado".</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -3372,7 +3387,7 @@
     <name>
     </name>
   </slidescene>
-  <slidescene id="inicio" start="yes" idTarget="Menu" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+  <slidescene id="inicio" start="no" idTarget="Menu" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
