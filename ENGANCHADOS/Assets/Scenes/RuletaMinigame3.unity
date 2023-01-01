@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab9bb3b1d0062440a4e7dadda3561b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monedas: 100
+  monedas: 30
 --- !u!224 &71249562 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224511889338460380, guid: 160be82451391f6448834ec65286e007,

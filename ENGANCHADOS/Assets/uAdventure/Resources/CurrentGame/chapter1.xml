@@ -1238,15 +1238,6 @@
     <name>
     </name>
     <default-initial-position x="1024" y="558" />
-    <exits>
-      <exit rectangular="no" x="1619" y="135" width="203" height="608" hasInfluenceArea="no" idTarget="Dia1Clase" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" cursor-path="" sound-path="" />
-        <point x="1637" y="200" />
-        <point x="1822" y="135" />
-        <point x="1794" y="743" />
-        <point x="1619" y="629" />
-      </exit>
-    </exits>
     <characters>
       <character-ref idTarget="Abuela2" x="565" y="766" scale="0.7517161" orientation="2" glow="no" layer="0" hasInfluenceArea="no" />
     </characters>
@@ -2723,13 +2714,13 @@
       <condition />
       <child nodeindex="2" />
       <speak-player>
-        <text>Robar a la abuela.</text>
+        <text>Coger dinero de la abuela.</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="3" />
       <speak-player>
-        <text>Robar a la abuela.</text>
+        <text>Extraer contenido monetario de la bolsa de la madre de mi progenitora, de manera ilegitima y un tanto sospechosa e inmoralmente cruel (Se muere de arritma cardiaca tras contemplar la falta de dinero en sus aposentos tars la comida con su nieto).</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -2762,7 +2753,7 @@
     <dialogue-node nodeindex="5" editor-x="1067" editor-y="235">
       <speak-player>
         <resources name="No name" />
-        <text>+ 100 créditos</text>
+        <text>+ 30 créditos</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -2907,7 +2898,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>No, ayer le robé a mi abuela 100 créditos.</text>
+        <text>No, ayer le robé a mi abuela 30 créditos.</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Pibe23">
@@ -3153,20 +3144,20 @@
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="MesesDespues">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+    <dialogue-node nodeindex="0" editor-x="0" editor-y="387">
       <speak-char idTarget="Madre3">
         <resources name="No name" />
-        <text>Hijo despierta, hijo.</text>
+        <text>Hijo despierta.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Madre3">
         <resources name="No name" />
-        <text>Desde antes de que la abuela se marchara al más allá, ya estabas raro.</text>
+        <text>Te encuentro raro.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Madre3">
         <resources name="No name" />
-        <text>¿Qué te pasa?</text>
+        <text>¿Estas bien?</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
@@ -3203,7 +3194,7 @@
       <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="1201" editor-y="442">
+    <dialogue-node nodeindex="3" editor-x="938" editor-y="442">
       <speak-player>
         <resources name="No name" />
         <text>Soy adicto a abrir cajas y quiero curarme.</text>
@@ -3221,7 +3212,7 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="567" editor-y="297" x="567" y="297">
+    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="670" editor-y="438" x="670" y="438">
       <speak-player>
         <text>Sí todo bien.</text>
         <resources name="No name" />
@@ -3235,10 +3226,15 @@
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="5" editor-x="1161" editor-y="37">
+    <dialogue-node nodeindex="5" editor-x="838" editor-y="65">
       <speak-char idTarget="Madre3">
         <resources name="No name" />
-        <text>La abuela se murió con la duda de que le desapareció dinero.</text>
+        <text>La abuela está muy preocupada desde el robo del dinero.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Madre3">
+        <resources name="No name" />
+        <text>Cree que unos ladrones entraron en su casa.</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Madre3">
@@ -3248,7 +3244,7 @@
       <condition />
       <child nodeindex="6" />
     </dialogue-node>
-    <option-node nodeindex="6" random="yes" keepShowing="yes" preListening="yes" editor-x="1617" editor-y="50" x="1617" y="50">
+    <option-node nodeindex="6" random="yes" keepShowing="yes" preListening="yes" editor-x="1504" editor-y="43" x="1504" y="43">
       <speak-player>
         <text>He sido yo. Me siento culpable.</text>
         <resources name="No name" />
